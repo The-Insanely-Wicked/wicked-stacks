@@ -30,9 +30,10 @@ export const SITE = {
   parentBrand: "The Insanely Wicked",
   parentUrl: "https://theinsanelywicked.com",
   doodleUrl: "https://doodleai.app",
-  // MailerLite (or any ESP) embedded-form action URL. Until set, the email
-  // form shows a mailto fallback so no signup is ever lost.
-  emailFormAction: "",
+  // MailerLite embedded-form subscribe endpoint (derived from the form's
+  // share URL: preview.mailerlite.io/forms/{account}/{form}/share).
+  emailFormAction:
+    "https://assets.mailerlite.com/jsonp/2587075/forms/196335778720121922/subscribe",
   contactEmail: "sales@theinsanelywicked.com",
 };
 

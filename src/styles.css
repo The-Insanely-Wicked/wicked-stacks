@@ -589,3 +589,16 @@ button:focus-visible {
   outline: 2px solid var(--amber);
   outline-offset: 2px;
 }
+
+/* email capture states */
+.email-done {
+  font-weight: 600;
+  color: var(--cyan);
+  font-size: 1.1rem;
+}
+
+.email-error {
+  color: var(--coral);
+  font-size: 0.9rem;
+  width: 100%;
+}
