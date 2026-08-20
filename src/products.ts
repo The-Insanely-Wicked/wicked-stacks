@@ -39,6 +39,7 @@ export const SITE = {
 export const PRODUCTS: Product[] = [
   {
     slug: "complete-business-mastery",
+    buyUrl: "https://buy.stripe.com/00w9AT4Ch0Gn77z25ncQU00",
     title: "Complete Business Mastery",
     subtitle: "The Ultimate (and Slightly Sarcastic) Guide to Building, Running, and Growing Any Business",
     category: "business",
@@ -62,6 +63,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "from-zero-to-online-income",
+    buyUrl: "https://buy.stripe.com/00w28rc4Jdt92Rj6lDcQU01",
     title: "From Zero to Online Income",
     subtitle: "A Beginner's Guide to Building a One-Person Business",
     category: "business",
@@ -84,6 +86,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "stuck-no-more",
+    buyUrl: "https://buy.stripe.com/7sYcN5gkZbl13VnbFXcQU02",
     title: "Stuck No More",
     subtitle: "A Simple Guide to Rebuilding Motivation, Confidence, and Direction",
     category: "mindset",
@@ -104,6 +107,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "the-digital-tapestry",
+    buyUrl: "https://buy.stripe.com/cNi4gzgkZ60H77zh0hcQU03",
     title: "The Digital Tapestry",
     subtitle: "Navigating Social Media, Influence, and the Future of Connection",
     category: "mindset",
@@ -125,6 +129,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "pennys-piggy-bank",
+    buyUrl: "https://buy.stripe.com/00wbJ17Ot3SzgI9eS9cQU04",
     title: "Penny's Piggy Bank",
     subtitle: "Learning to Save and Share",
     category: "kids",
@@ -145,6 +150,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "princess-pennys-problem-solving-party",
+    buyUrl: "https://buy.stripe.com/3cI5kD3ydbl163v25ncQU0a",
     title: "Princess Penny's Problem-Solving Party",
     subtitle: "A fully illustrated story about thinking it through",
     category: "kids",
@@ -165,6 +171,7 @@ export const PRODUCTS: Product[] = [
   // ------------------------------- STACKS -------------------------------
   {
     slug: "business-starter-stack",
+    buyUrl: "https://buy.stripe.com/8x2eVd6Kp4WDbnPeS9cQU05",
     title: "The Business Starter Stack",
     subtitle: "From your first idea to a business that runs",
     category: "stack",
@@ -187,6 +194,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "clear-head-stack",
+    buyUrl: "https://buy.stripe.com/3cI8wPb0F4WD8bD5hzcQU06",
     title: "The Clear Head Stack",
     subtitle: "Get unstuck. Get your attention back.",
     category: "stack",
@@ -207,6 +215,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "pennys-story-stack",
+    buyUrl: "https://buy.stripe.com/8x29AT5GlfBh0Jb4dvcQU07",
     title: "Penny's Story Stack",
     subtitle: "Both Penny adventures, one bundle",
     category: "stack",
@@ -227,6 +236,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "everything-stack",
+    buyUrl: "https://buy.stripe.com/3cIfZh9WBdt90Jb7pHcQU08",
     title: "The Everything Stack",
     subtitle: "The entire Wicked Stacks library",
     category: "stack",
