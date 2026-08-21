@@ -57,6 +57,17 @@
       ]
     }
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1W41R3H9X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E1W41R3H9X');
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href*="buy.stripe.com"]') : null;
+        if (a) gtag('event', 'begin_checkout', { product_page: location.pathname });
+      }, true);
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
