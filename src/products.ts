@@ -152,11 +152,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "your-shit-stinks-too",
-    buyUrl: "https://buy.stripe.com/00weVdfgV2Ov9fHh0hcQU0f",
+    buyUrl: "https://buy.stripe.com/eVq14n0m10GneA1h0hcQU0g",
     title: "Your Shit Stinks Too",
     subtitle: "The Audio Collection",
     category: "mindset",
-    price: 9,
+    price: 12,
     badge: "Audio · growing",
     formats: ["3 audio deep-dives (M4A) · ~2 hours", "New episodes added free"],
     blurb:
@@ -164,12 +164,13 @@ export const PRODUCTS: Product[] = [
     description: [
       "Your Shit Stinks Too started as a podcast with an unlikely duo: Michael and his dog Frankie, calling out the one thing humans hate admitting — everybody's shit stinks, including yours, including his.",
       "This collection turns that story into AI-hosted deep-dive conversations that dig into the big uncomfortable stuff: The High Horse of Human Hypocrisy (~40 min), Why Our Brains Defend Systemic Inequality (~43 min), and Shared Fallibility and Systemic Racism (~38 min).",
-      "It's a living collection — new episodes get added as they're made, and every buyer gets them emailed free. Buy it once, and it keeps growing.",
+      "It's a living collection — new episodes get added as they're made, and every buyer gets them emailed free. The price climbs as episodes are added: buy now and lock in every future episode at today's price.",
     ],
     bullets: [
       "3 deep-dive episodes, ~2 hours of audio",
       "Honest, funny, and uncomfortable in the good way",
       "New episodes emailed to you free as they drop",
+      "Price goes up as the collection grows — lock it in now",
       "Listen anywhere — it's yours, no app required",
     ],
   },
