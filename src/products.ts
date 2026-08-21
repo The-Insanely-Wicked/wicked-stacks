@@ -97,13 +97,14 @@ export const PRODUCTS: Product[] = [
     subtitle: "A Simple Guide to Rebuilding Motivation, Confidence, and Direction",
     category: "mindset",
     price: 19,
-    formats: ["Ebook (PDF + EPUB)", "Audiobook (MP3)"],
+    formats: ["Ebook (PDF + EPUB)", "Audiobook (MP3)", "The Restart Kit (PDF)"],
     blurb:
       "For anyone who feels stalled: how shame and paralysis actually work, and the small, doable steps that get you moving again.",
     description: [
       "Stuck No More is for the season where everything feels heavy and nothing feels possible. It takes the mechanics of feeling stuck — shame, paralysis, lost direction — and breaks them into pieces small enough to actually deal with.",
       "It covers rebuilding habits without self-punishment, finding purpose without a lightning-bolt moment, and treating yourself like someone worth helping. No toxic positivity, no 5 AM cold plunges required.",
       "The full audiobook edition is now included with every copy — read it, listen to it, or both.",
+      "And every copy now comes with The Restart Kit: a printable companion workbook with a tool for all fourteen chapters — the Stuck Inventory, the Roadblock Identifier, the Small Promise Tracker, the Restart Protocol — finishing with an Emergency Restart Card built for the day it all falls apart. Read the chapter, spend fifteen minutes with its worksheet, and the ideas turn into motion.",
     ],
     bullets: [
       "The longest, most personal book in the catalog (~37,000 words)",
@@ -111,6 +112,7 @@ export const PRODUCTS: Product[] = [
       "Self-compassion that isn't self-indulgence",
       "Ends with a plan, not a pep talk",
       "Full audiobook edition included free",
+      "The Restart Kit: 14 printable worksheets + the Emergency Restart Card",
     ],
   },
   {
@@ -428,7 +430,7 @@ export const PRODUCTS: Product[] = [
     category: "stack",
     price: 29,
     compareAt: 38,
-    formats: ["2 ebooks + 2 audiobooks"],
+    formats: ["2 ebooks + 2 audiobooks + The Restart Kit"],
     includes: ["stuck-no-more", "the-digital-tapestry"],
     blurb:
       "Stuck No More to get you moving, The Digital Tapestry to take your brain back from the feed.",
@@ -439,6 +441,7 @@ export const PRODUCTS: Product[] = [
       "Stuck No More (~37,000 words of practical self-help)",
       "The Digital Tapestry (9 chapters on reclaiming your attention)",
       "Both audiobooks now included — Stuck No More and The Digital Tapestry",
+      "The Restart Kit workbook — 14 worksheets + the Emergency Restart Card",
     ],
   },
   {
@@ -470,7 +473,7 @@ export const PRODUCTS: Product[] = [
     category: "stack",
     price: 89,
     compareAt: 126,
-    formats: ["6 books + workbooks + 3 audiobooks"],
+    formats: ["6 books + 3 workbooks + 3 audiobooks"],
     badge: "The whole stack",
     includes: [
       "complete-business-mastery",
@@ -486,7 +489,7 @@ export const PRODUCTS: Product[] = [
       "All six titles, all companion workbooks and resource packs, all audio — three full audiobooks and CBM's bonus deep-dives included. The library keeps growing and the price climbs with it: buy once, lock it in, and every future format upgrade lands in your library free.",
     ],
     bullets: [
-      "All 4 adult titles + both workbooks/resource packs",
+      "All 4 adult titles + all 3 workbooks and resource packs",
       "CBM's 4 bonus audio deep-dives included",
       "Both Penny kids' books + audiobook",
       "Future format upgrades to included titles, free",
