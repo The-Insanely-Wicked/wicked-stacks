@@ -32,7 +32,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="wrap footer-legal">
-        © {new Date().getFullYear()} {SITE.parentBrand}. All rights reserved.
+        © {new Date().getFullYear()} {SITE.parentBrand}. All rights reserved.{" "}
+        · <a href="/brand-kit.html">Brand Kit</a>
       </div>
     </footer>
   );

@@ -1,0 +1,107 @@
+WICKED STACKS™ — BRAND GUIDE
+==============================
+The single source of truth for the store. If it's in here, it's approved.
+Live version with images: wickedstacks.com/brand-kit.html
+Parent company guide: theinsanelywicked.com/media-kit.html
+
+MISSION
+-------
+Real books written by a real person, sold the way we wish stores sold
+them: every format you need — ebook, workbook, audio — for one fair
+price, delivered the second you pay, with future format upgrades free.
+No subscriptions, no locked apps, no nickel-and-diming. You buy a book,
+you own the book.
+
+BRAND VOICE — HOW THE STORE SOUNDS
+----------------------------------
+Wicked Stacks shares The Insanely Wicked's DNA (plain beats fancy, funny
+never mean, no guru talk ever) with two store-specific twists:
+
+1. A little more playful. We sell kids' books about a piggy bank next to
+   business books — the shelf has range, and the voice can smile.
+2. We talk like a bookseller, not a marketer. "You might like this
+   because..." beats "UNLOCK THE SECRETS OF..."
+3. Every claim is checkable. Page counts, what's included, what format —
+   exact, honest, no padding.
+4. The customer is smart. We never write down to anyone — including the
+   four-year-olds. Especially the four-year-olds.
+
+TAGLINES
+--------
+Primary:   Stack your shelf. Stack your skills.
+Secondary: Real books written by a real person.
+Format:    Every format included. Future upgrades free.
+
+BIOS — COPY/PASTE READY
+-----------------------
+SHORT (~45 words):
+Wicked Stacks™ is the bookstore of The Insanely Wicked — real books
+written by a real person. Business guides with actual worksheets,
+honest self-help, and illustrated kids' stories, each sold with every
+format included and delivered instantly. Stack your shelf. Stack your
+skills.
+
+FULL (~100 words):
+Wicked Stacks™ is an independent online bookstore with a simple rule:
+when you buy a book, you get the whole book — PDF, e-reader edition,
+workbooks, audiobooks — one price, delivered the moment you pay, with
+future format upgrades added to your library free. The shelf ranges
+from Complete Business Mastery (a year and a half in the making, with a
+full toolkit of templates) to Stuck No More's honest self-help to the
+illustrated Penny series for kids. Every title is written by Michael
+Gardner, the builder behind The Insanely Wicked. No subscriptions, no
+locked apps — you buy a book, you own the book.
+
+BOILERPLATE
+-----------
+Wicked Stacks™ is the online bookstore of The Insanely Wicked℠,
+selling business, self-help, and children's books in every format with
+instant delivery. Browse the shelf at wickedstacks.com.
+
+THE SHELF (current catalog)
+---------------------------
+Complete Business Mastery        $47   flagship + resource pack · cbmbook.com
+From Zero to Online Income       $17   beginner path + workbook
+Stuck No More                    $19   motivation & confidence rebuild
+The Digital Tapestry             $19   social media survival (audiobook coming)
+Penny's Piggy Bank               $12   illustrated + full audiobook
+Princess Penny's Party           $12   illustrated problem-solving story
+Business Starter Stack           $54   From Zero + CBM, everything included
+Clear Head Stack                 $29   Stuck No More + Digital Tapestry
+Penny's Story Stack              $19   both Penny adventures + audio
+The Everything Stack             $79   the whole library + free upgrades
+DoodleAI                         $97   doodle video software · doodleai.app
+
+BRAND COLORS
+------------
+Wicked Dark   #0D0B14   background
+Cyan          #35C7EE   }
+Purple        #8B5CF6   } the signature gradient, always in
+Coral         #F2545B   } this order: cyan-purple-coral-amber
+Amber         #F5A623   }
+Text          #ECE9F4   body text on dark
+Text Dim      #A49DBD   secondary text
+
+The gradient is the store's signature — it colors "Stacks" in the
+wordmark and the hero headline. Use it left-to-right, never reordered.
+
+TYPOGRAPHY
+----------
+Headlines: Sora (600-800)
+Body:      Inter (400-600)
+Both free on Google Fonts. Same family as the parent brand.
+
+LOGO RULES
+----------
+- The mark is the interlocked-blocks "S" (transparent PNG). Never
+  stretch, recolor, rotate, or add effects.
+- The wordmark is "WickedStacks™" — "Wicked" in off-white, "Stacks" in
+  the signature gradient, TM small and dim.
+- The mark alone works for avatars, favicons, and app icons.
+- Clear space around the mark: at least 1/4 of its width on all sides.
+- ™ (not ℠) — Wicked Stacks is a product brand, pending registration.
+
+CONTACT
+-------
+sales@theinsanelywicked.com · wickedstacks.com
+A brand of The Insanely Wicked℠ · theinsanelywicked.com
