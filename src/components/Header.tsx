@@ -12,7 +12,7 @@ export default function Header() {
     <header className="site-header">
       <div className="wrap header-row">
         <Link to="/" className="logo">
-          <span className="logo-mark">⚡</span>
+          <img className="logo-mark" src="/brand/mark.png" alt="" />
           <span className="logo-text">
             Wicked<span className="logo-accent">Stacks</span>
             <sup className="logo-tm">™</sup>

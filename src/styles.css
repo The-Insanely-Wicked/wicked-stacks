@@ -92,7 +92,9 @@ a {
 }
 
 .logo-mark {
-  font-size: 1.35rem;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 .logo-accent {
