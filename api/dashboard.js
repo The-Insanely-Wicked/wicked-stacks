@@ -10,6 +10,7 @@ const PLINK_NAMES = {
   plink_1U6Xa9EUuXAf9uyBQQzcyLfO: "Complete Business Mastery",
   plink_1U6XagEUuXAf9uyBAtounPrS: "From Zero to Online Income",
   plink_1U6XakEUuXAf9uyBNiLyVJyb: "Stuck No More",
+  plink_1U71RYEUuXAf9uyBlpWAhlyc: "Stuck No More",
   plink_1U6XanEUuXAf9uyByq7C1kJD: "The Digital Tapestry",
   plink_1U6XavEUuXAf9uyBpuSRik6h: "Penny's Piggy Bank",
   plink_1U6XbvEUuXAf9uyBCZh3rndD: "Princess Penny's Party",

@@ -92,11 +92,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "stuck-no-more",
-    buyUrl: "https://buy.stripe.com/7sYcN5gkZbl13VnbFXcQU02",
+    buyUrl: "https://buy.stripe.com/cNi9AT4Chcp5fE5h0hcQU0n",
     title: "Stuck No More",
     subtitle: "A Simple Guide to Rebuilding Motivation, Confidence, and Direction",
     category: "mindset",
-    price: 19,
+    price: 27,
     formats: ["Ebook (PDF + EPUB)", "Audiobook (MP3)", "The Restart Kit (PDF)"],
     blurb:
       "For anyone who feels stalled: how shame and paralysis actually work, and the small, doable steps that get you moving again.",
@@ -113,6 +113,7 @@ export const PRODUCTS: Product[] = [
       "Ends with a plan, not a pep talk",
       "Full audiobook edition included free",
       "The Restart Kit: 14 printable worksheets + the Emergency Restart Card",
+      "Price locked at purchase — anything added later is yours free",
     ],
   },
   {
@@ -429,7 +430,7 @@ export const PRODUCTS: Product[] = [
     subtitle: "Get unstuck. Get your attention back.",
     category: "stack",
     price: 29,
-    compareAt: 38,
+    compareAt: 46,
     formats: ["2 ebooks + 2 audiobooks + The Restart Kit"],
     includes: ["stuck-no-more", "the-digital-tapestry"],
     blurb:
@@ -472,7 +473,7 @@ export const PRODUCTS: Product[] = [
     subtitle: "The entire Wicked Stacks library",
     category: "stack",
     price: 89,
-    compareAt: 126,
+    compareAt: 134,
     formats: ["6 books + 3 workbooks + 3 audiobooks"],
     badge: "The whole stack",
     includes: [

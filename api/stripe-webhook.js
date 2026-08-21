@@ -17,6 +17,7 @@ const PLINK_TO_GROUP = {
   plink_1U6Xa9EUuXAf9uyBQQzcyLfO: "Purchased – Complete Business Mastery",
   plink_1U6XagEUuXAf9uyBAtounPrS: "Purchased – From Zero to Online Income",
   plink_1U6XakEUuXAf9uyBNiLyVJyb: "Purchased – Stuck No More",
+  plink_1U71RYEUuXAf9uyBlpWAhlyc: "Purchased – Stuck No More",
   plink_1U6XanEUuXAf9uyByq7C1kJD: "Purchased – The Digital Tapestry",
   plink_1U6XavEUuXAf9uyBpuSRik6h: "Purchased – Penny's Piggy Bank",
   plink_1U6XbvEUuXAf9uyBCZh3rndD: "Purchased – Princess Penny's Party",
