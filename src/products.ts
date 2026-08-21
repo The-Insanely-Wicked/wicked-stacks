@@ -129,6 +129,28 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
+    slug: "tapestry-debates",
+    buyUrl: "https://buy.stripe.com/3cIdR9gkZgFl3VnbFXcQU0b",
+    title: "The Tapestry Debates",
+    subtitle: "Two AI-hosted debates on the big questions from The Digital Tapestry",
+    category: "mindset",
+    price: 7,
+    formats: ["2 audio debates (M4A) · ~50 minutes"],
+    blurb:
+      "Two lively AI-hosted debates that take the sharpest questions from The Digital Tapestry and argue both sides — smart, fast, and surprisingly fun to disagree with.",
+    description: [
+      "How Algorithms Hijack Your Brain: are recommendation feeds a tool you use, or a slot machine using you? Both sides get their best shot.",
+      "Digital Connection or Psychological Trap?: is social media genuinely connecting us, or performing connection while collecting us? A real argument, not a lecture.",
+      "Made with AI debate hosts from the book's own research and ideas — a different way into the material, perfect for a commute. Read the book, then hear it argued.",
+    ],
+    bullets: [
+      "Two full debates, ~25 minutes each",
+      "Both sides argued properly — no strawmen",
+      "Built from The Digital Tapestry's research",
+      "Great companion listen to the book (sold separately, $19)",
+    ],
+  },
+  {
     slug: "pennys-piggy-bank",
     buyUrl: "https://buy.stripe.com/00wbJ17Ot3SzgI9eS9cQU04",
     title: "Penny's Piggy Bank",
