@@ -22,6 +22,9 @@ export default function ProductPage() {
             {CATEGORY_LABELS[product.category]}
           </Link>
         </p>
+        {product.image && (
+          <img className="product-img" src={product.image} alt="" />
+        )}
         {product.badge && <span className="badge">{product.badge}</span>}
         <h1>{product.title}</h1>
         <p className="lead">{product.subtitle}</p>
@@ -36,6 +39,17 @@ export default function ProductPage() {
           </span>
           <BuyButton product={product} />
         </div>
+
+        {product.courses && (
+          <>
+            <h2>Courses included</h2>
+            <ul className="course-list">
+              {product.courses.map((c) => (
+                <li key={c}>{c}</li>
+              ))}
+            </ul>
+          </>
+        )}
 
         {product.description.map((para) => (
           <p key={para.slice(0, 32)} className="body-para">

@@ -4,6 +4,9 @@ import type { Product } from "../products";
 export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link to={`/p/${product.slug}`} className="card">
+      {product.image && (
+        <img className="card-img" src={product.image} alt="" loading="lazy" />
+      )}
       {product.badge && <span className="badge">{product.badge}</span>}
       <h3 className="card-title">{product.title}</h3>
       <p className="card-sub">{product.subtitle}</p>

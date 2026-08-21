@@ -4,6 +4,7 @@ const nav = [
   { to: "/c/business", label: "Business" },
   { to: "/c/mindset", label: "Mind & Life" },
   { to: "/c/kids", label: "Kids' Corner" },
+  { to: "/c/courses", label: "Courses" },
   { to: "/c/stack", label: "Stacks" },
   { to: "/blog", label: "Blog" },
 ];

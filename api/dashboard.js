@@ -22,6 +22,11 @@ const PLINK_NAMES = {
   plink_1U6n3KEUuXAf9uyBBnZog3bN: "Tapestry Debates",
   plink_1U6ny3EUuXAf9uyB95des2ne: "Your Shit Stinks Too",
   plink_1U6oBsEUuXAf9uyBzCcmjiyT: "Your Shit Stinks Too",
+  plink_1U6z3eEUuXAf9uyBqKolLCBL: "Project Management Stack",
+  plink_1U6z3jEUuXAf9uyBtD7zPAFO: "Communication Stack",
+  plink_1U6z3nEUuXAf9uyBGgypjH0q: "Focus & Resilience Stack",
+  plink_1U6z3qEUuXAf9uyBGhMmeMtp: "Career Growth Stack",
+  plink_1U6z3tEUuXAf9uyBC7dlLr2Y: "Complete Course Library",
 };
 
 export default async function handler(req, res) {

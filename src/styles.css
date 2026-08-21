@@ -638,3 +638,16 @@ button:focus-visible {
 }
 .blog-cta h3 { margin: 6px 0 8px; font-size: 1.25rem; }
 .blog-cta p { color: var(--muted, #a49dbd); }
+
+
+/* ---------- course cover art ---------- */
+.card-img {
+  display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+  border-radius: 10px; margin-bottom: 14px; background: #1a1526;
+}
+.product-img {
+  display: block; width: 100%; max-width: 560px; aspect-ratio: 16 / 9;
+  object-fit: cover; border-radius: 14px; margin-bottom: 20px; background: #1a1526;
+}
+.course-list { margin: 0 0 1.2em 1.2em; }
+.course-list li { margin-bottom: .45em; }

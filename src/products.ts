@@ -6,7 +6,7 @@
 // Until a buyUrl is set, the buy button shows "Coming soon" automatically.
 // ---------------------------------------------------------------------------
 
-export type Category = "business" | "mindset" | "kids" | "stack";
+export type Category = "business" | "mindset" | "kids" | "stack" | "courses";
 
 export interface Product {
   slug: string;
@@ -22,6 +22,8 @@ export interface Product {
   buyUrl?: string; // Stripe Payment Link — leave unset until created
   badge?: string;
   includes?: string[]; // slugs of products inside a stack
+  image?: string; // optional cover art (path under /public)
+  courses?: string[]; // course titles inside a course stack
 }
 
 export const SITE = {
@@ -219,6 +221,150 @@ export const PRODUCTS: Product[] = [
       "Part of the Penny series — collect both adventures",
     ],
   },
+  // ---------------------------- VIDEO COURSES ----------------------------
+  {
+    slug: "project-management-stack",
+    buyUrl: "https://buy.stripe.com/28EdR90m174LcrTbFXcQU0i",
+    title: "The Project Management Stack",
+    subtitle: "Five complete video courses, start to finish",
+    category: "courses",
+    price: 49,
+    badge: "Video courses",
+    formats: ["5 video courses", "Companion PDFs", "Stream or download"],
+    courses: [
+      "Getting Started with Project Management",
+      "Improving Your Project Management Skills",
+      "Project Management Scheduling",
+      "Mastering Project Management Frameworks",
+      "Secrets to Successful Reporting for Project Managers",
+    ],
+    blurb:
+      "Everything from your first project plan to reporting that executives actually read — five full video courses, professionally produced.",
+    description: [
+      "Project management is one of those skills nobody formally teaches you — you get handed a project and everyone assumes you know what a Gantt chart is. This stack fixes that, properly.",
+      "Five complete video courses take you from fundamentals through scheduling, frameworks, and the reporting skills that make the difference between a project manager people trust and one they route around.",
+      "Every course is video-based with companion PDF materials. Stream them or download them and keep them forever — no platform login, no expiring access, no subscription.",
+    ],
+    bullets: [
+      "5 complete courses, professionally produced video",
+      "Fundamentals → scheduling → frameworks → reporting",
+      "Companion PDF guides included",
+      "Yours forever — download and keep, no subscription",
+    ],
+  },
+  {
+    slug: "communication-stack",
+    buyUrl: "https://buy.stripe.com/3cI28rd8N3SzfE539rcQU0j",
+    title: "The Communication Stack",
+    subtitle: "Write better, speak better, negotiate better",
+    category: "courses",
+    price: 39,
+    formats: ["4 video courses", "Companion PDFs", "Stream or download"],
+    courses: [
+      "Write Like A Boss",
+      "Master the Art of Verbal Communication",
+      "Guide to Negotiation and Persuasion",
+      "Chatters: Everyday Conversation Skills",
+    ],
+    blurb:
+      "The skills that decide whether your good ideas get heard — writing, speaking, negotiating, and holding a room.",
+    description: [
+      "Most careers stall on communication, not competence. The person who explains the idea clearly gets the budget; the person who can't gets overlooked, no matter how good the idea was.",
+      "Four complete video courses cover the whole range: writing that gets read, speaking that holds attention, negotiating without being a jerk about it, and the everyday conversation skills nobody thinks to teach.",
+      "Video lessons plus companion PDFs. Download them and they're yours — no subscription, no expiring access.",
+    ],
+    bullets: [
+      "4 complete courses, professionally produced video",
+      "Writing, speaking, negotiation, and everyday conversation",
+      "Companion PDF guides included",
+      "Yours forever — download and keep, no subscription",
+    ],
+  },
+  {
+    slug: "focus-resilience-stack",
+    buyUrl: "https://buy.stripe.com/fZu6oHecR2OvbnP8tLcQU0k",
+    title: "The Focus & Resilience Stack",
+    subtitle: "Five video courses on stress, focus, and holding steady",
+    category: "courses",
+    price: 39,
+    formats: ["5 video courses", "Companion PDFs", "Stream or download"],
+    courses: [
+      "Dealing With Stress",
+      "How to Manage Stress and Increase Mental Focus",
+      "Workplace Distractions",
+      "Strategies for Working Remotely",
+      "Leading Through Change",
+    ],
+    blurb:
+      "Stress, distraction, remote-work drift, and change you didn't ask for — five courses on staying functional when work gets loud.",
+    description: [
+      "Nobody's productivity problem is really a productivity problem. It's stress you're carrying, distractions you can't escape, or change nobody prepared you for.",
+      "Five complete video courses work on the actual causes: managing stress instead of powering through it, rebuilding focus in an environment designed to break it, making remote work sustainable, and leading a team through change without losing them.",
+      "Pairs naturally with Stuck No More if you're rebuilding on the personal side too.",
+    ],
+    bullets: [
+      "5 complete courses, professionally produced video",
+      "Stress, focus, distraction, remote work, and change",
+      "Companion PDF guides included",
+      "Yours forever — download and keep, no subscription",
+    ],
+  },
+  {
+    slug: "career-growth-stack",
+    buyUrl: "https://buy.stripe.com/28E3cvgkZ9cTdvXcK1cQU0l",
+    title: "The Career Growth Stack",
+    subtitle: "Three video courses for building a career on purpose",
+    category: "courses",
+    price: 39,
+    formats: ["3 video courses", "Companion PDFs", "Stream or download"],
+    courses: [
+      "Take Control of Your Future: Career Development 101",
+      "The Complete Guide for New Professionals",
+      "Problem Solving Fundamentals",
+    ],
+    blurb:
+      "For anyone starting out or starting over — career direction, professional footing, and the problem-solving skills every job actually tests.",
+    description: [
+      "Careers don't build themselves, and nobody hands you a map. These three courses are the map: how to steer your own development instead of waiting to be noticed, how to find your footing as a new professional, and how to solve problems in a way people remember.",
+      "Video lessons throughout, with companion PDF materials. Perfect alongside From Zero to Online Income if you're building something on the side.",
+    ],
+    bullets: [
+      "3 complete courses, professionally produced video",
+      "Career development, professional skills, problem solving",
+      "Companion PDF guides included",
+      "Yours forever — download and keep, no subscription",
+    ],
+  },
+  {
+    slug: "complete-course-library",
+    buyUrl: "https://buy.stripe.com/6oUdR95GlgFl1NfdO5cQU0m",
+    title: "The Complete Course Library",
+    subtitle: "All 17 video courses, one price",
+    category: "courses",
+    price: 99,
+    compareAt: 166,
+    badge: "Best value",
+    formats: ["17 video courses", "All companion PDFs", "Stream or download"],
+    includes: [
+      "project-management-stack",
+      "communication-stack",
+      "focus-resilience-stack",
+      "career-growth-stack",
+    ],
+    blurb:
+      "Every course we've got — project management, communication, focus, and career growth. Seventeen full video courses for less than the price of two.",
+    description: [
+      "All four course stacks in one purchase: seventeen complete video courses covering project management, communication, focus and resilience, and career growth.",
+      "This is the professional-skills shelf — the stuff your job assumes you already know and never taught you. Video lessons with companion PDFs throughout.",
+      "Buy once and it's yours: download everything, keep it forever, and new courses added to the library are yours free.",
+    ],
+    bullets: [
+      "All 17 courses across four stacks",
+      "Every companion PDF included",
+      "New courses added to the library, free",
+      "Yours forever — download and keep, no subscription",
+    ],
+  },
   // ------------------------------- STACKS -------------------------------
   {
     slug: "business-starter-stack",
@@ -324,4 +470,5 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   mindset: "Mind & Life",
   kids: "Kids' Corner",
   stack: "Stacks (Bundles)",
+  courses: "Video Courses",
 };

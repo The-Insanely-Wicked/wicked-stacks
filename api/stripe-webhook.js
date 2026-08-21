@@ -29,6 +29,11 @@ const PLINK_TO_GROUP = {
   plink_1U6n3KEUuXAf9uyBBnZog3bN: "Purchased – Tapestry Debates",
   plink_1U6ny3EUuXAf9uyB95des2ne: "Purchased – Your Shit Stinks Too",
   plink_1U6oBsEUuXAf9uyBzCcmjiyT: "Purchased – Your Shit Stinks Too",
+  plink_1U6z3eEUuXAf9uyBqKolLCBL: "Purchased – Project Management Stack",
+  plink_1U6z3jEUuXAf9uyBtD7zPAFO: "Purchased – Communication Stack",
+  plink_1U6z3nEUuXAf9uyBGgypjH0q: "Purchased – Focus & Resilience Stack",
+  plink_1U6z3qEUuXAf9uyBGhMmeMtp: "Purchased – Career Growth Stack",
+  plink_1U6z3tEUuXAf9uyBC7dlLr2Y: "Purchased – Complete Course Library",
 };
 
 const ML_BASE = "https://connect.mailerlite.com/api";
