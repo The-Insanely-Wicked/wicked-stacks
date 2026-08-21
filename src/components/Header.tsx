@@ -15,6 +15,7 @@ export default function Header() {
           <span className="logo-mark">⚡</span>
           <span className="logo-text">
             Wicked<span className="logo-accent">Stacks</span>
+            <sup className="logo-tm">™</sup>
           </span>
         </Link>
         <nav className="main-nav" aria-label="Store sections">

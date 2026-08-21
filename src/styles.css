@@ -602,3 +602,10 @@ button:focus-visible {
   font-size: 0.9rem;
   width: 100%;
 }
+
+.logo-tm {
+  font-size: 0.45em;
+  margin-left: 2px;
+  color: var(--ink-soft);
+  font-weight: 400;
+}
