@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wicked Numbers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0d0b14; color: #ece9f4; font-family: "Segoe UI", system-ui, Arial, sans-serif;
+    min-height: 100vh; padding: 36px 20px 60px;
+    background-image: radial-gradient(60% 50% at 85% 0%, rgba(124,58,237,.16), transparent 60%); }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  h1 { font-size: 26px; font-weight: 800; }
+  h1 .grad { background: linear-gradient(90deg,#35c7ee,#8b5cf6,#f2545b,#f5a623);
+    -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { color: #a49dbd; font-size: 14px; margin: 2px 0 26px; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 26px; }
+  .tile { background: #16121f; border: 1px solid #2b2440; border-radius: 14px; padding: 16px 18px; }
+  .tile .label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #a49dbd; margin-bottom: 6px; }
+  .tile .big { font-size: 30px; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .tile .small { font-size: 13px; color: #a49dbd; margin-top: 2px; }
+  h2 { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #a49dbd; margin: 26px 0 10px; }
+  table { border-collapse: collapse; width: 100%; background: #16121f; border: 1px solid #2b2440; border-radius: 14px; overflow: hidden; font-size: 14px; }
+  th { text-align: left; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #a49dbd; padding: 10px 14px; border-bottom: 1px solid #2b2440; }
+  td { padding: 9px 14px; border-bottom: 1px solid #221c33; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: none; }
+  .bar { height: 8px; border-radius: 4px; background: linear-gradient(90deg,#35c7ee,#8b5cf6); min-width: 4px; }
+  .links { margin-top: 30px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .links a { color: #a78bfa; text-decoration: none; font-size: 13px; background: #16121f; border: 1px solid #2b2440; padding: 8px 14px; border-radius: 999px; }
+  #gate { max-width: 380px; margin: 15vh auto; text-align: center; }
+  #gate input { width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid #2b2440; background: #16121f; color: #ece9f4; font-size: 15px; margin: 14px 0 10px; }
+  #gate button { padding: 11px 26px; border-radius: 999px; border: 0; background: #7c3aed; color: #fff; font-weight: 700; font-size: 15px; cursor: pointer; }
+  .err { color: #f57e84; font-size: 13px; min-height: 18px; margin-top: 6px; }
+  .muted { color: #8d86a3; font-size: 13px; }
+  #board { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div id="gate">
+    <h1>⚡ Wicked <span class="grad">Numbers</span></h1>
+    <p class="sub">Owner's eyes only.</p>
+    <input id="key" type="password" placeholder="Dashboard key" autocomplete="current-password">
+    <br><button onclick="unlock()">Open</button>
+    <div class="err" id="gateErr"></div>
+  </div>
+
+  <div id="board">
+    <h1>⚡ Wicked <span class="grad">Numbers</span></h1>
+    <p class="sub" id="stamp">Loading…</p>
+
+    <div class="tiles">
+      <div class="tile"><div class="label">Today</div><div class="big" id="revToday">–</div><div class="small" id="cntToday"></div></div>
+      <div class="tile"><div class="label">Last 7 days</div><div class="big" id="revWeek">–</div><div class="small" id="cntWeek"></div></div>
+      <div class="tile"><div class="label">Last 30 days</div><div class="big" id="revMonth">–</div><div class="small" id="cntMonth"></div></div>
+      <div class="tile"><div class="label">Email subscribers</div><div class="big" id="subs">–</div><div class="small">MailerLite list</div></div>
+    </div>
+
+    <h2>Sales by product · 30 days</h2>
+    <table id="prodTable"><tr><th>Product</th><th style="width:90px">Sold</th><th></th></tr></table>
+
+    <h2>Recent orders</h2>
+    <table id="orderTable"><tr><th>When</th><th>Product</th><th>Amount</th><th>Customer</th></tr></table>
+
+    <h2>Traffic</h2>
+    <p class="muted">Live traffic numbers arrive here once Google Analytics is connected (create the GA4 property, paste the two Measurement IDs to Claude). Until then: <a style="color:#a78bfa" href="https://vercel.com" target="_blank">Vercel's analytics tab</a> shows store visits.</p>
+
+    <div class="links">
+      <a href="https://dashboard.stripe.com" target="_blank">Stripe →</a>
+      <a href="https://dashboard.mailerlite.com" target="_blank">MailerLite →</a>
+      <a href="https://analytics.google.com" target="_blank">Google Analytics →</a>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const money = (n) => "$" + n.toLocaleString(undefined, { maximumFractionDigits: 0 });
+
+function unlock() {
+  const k = $("key").value.trim();
+  if (!k) return;
+  try { localStorage.setItem("wicked-dash-key", k); } catch {}
+  load(k);
+}
+
+async function load(k) {
+  $("gateErr").textContent = "";
+  let r;
+  try { r = await fetch("/api/dashboard?key=" + encodeURIComponent(k)); }
+  catch { $("gateErr").textContent = "Network hiccup — try again."; return; }
+  if (r.status === 401) { $("gateErr").textContent = "Wrong key."; try { localStorage.removeItem("wicked-dash-key"); } catch {} return; }
+  if (!r.ok) { $("gateErr").textContent = "Numbers engine not set up yet (env vars)."; return; }
+  const d = await r.json();
+
+  $("gate").style.display = "none";
+  $("board").style.display = "block";
+  $("stamp").textContent = "As of " + new Date().toLocaleString() + " · refreshes each minute";
+
+  $("revToday").textContent = money(d.revenue.today);
+  $("revWeek").textContent = money(d.revenue.week);
+  $("revMonth").textContent = money(d.revenue.month);
+  $("cntToday").textContent = d.counts.today + (d.counts.today === 1 ? " order" : " orders");
+  $("cntWeek").textContent = d.counts.week + " orders";
+  $("cntMonth").textContent = d.counts.month + " orders";
+  $("subs").textContent = d.subscribers ?? "–";
+
+  const prods = Object.entries(d.products).sort((a, b) => b[1] - a[1]);
+  const max = Math.max(1, ...prods.map(([, n]) => n));
+  $("prodTable").innerHTML = "<tr><th>Product</th><th style='width:90px'>Sold</th><th></th></tr>" +
+    (prods.length ? prods.map(([name, n]) =>
+      `<tr><td>${name}</td><td>${n}</td><td><div class="bar" style="width:${Math.round((n / max) * 100)}%"></div></td></tr>`).join("")
+      : "<tr><td colspan=3 class='muted'>No sales in the last 30 days yet — they'll appear here.</td></tr>");
+
+  $("orderTable").innerHTML = "<tr><th>When</th><th>Product</th><th>Amount</th><th>Customer</th></tr>" +
+    (d.orders.length ? d.orders.map((o) =>
+      `<tr><td>${new Date(o.when * 1000).toLocaleString(undefined,{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})}</td><td>${o.product}</td><td>${money(o.amount)}</td><td>${o.email}</td></tr>`).join("")
+      : "<tr><td colspan=4 class='muted'>No orders yet.</td></tr>");
+
+  clearTimeout(window._t); window._t = setTimeout(() => load(k), 60000);
+}
+
+try {
+  const saved = localStorage.getItem("wicked-dash-key");
+  if (saved) { $("gate").style.display = "none"; load(saved); }
+} catch {}
+</script>
+</body>
+</html>
