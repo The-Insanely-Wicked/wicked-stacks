@@ -117,6 +117,14 @@ first 3 seconds, captions on, one soft ask at the end.
   most people I know. Free 4-minute episode of Your Shit Stinks Too — dog
   logic vs. human moralizing: https://youtu.be/cyz0DfuaF0k
 
+## Live promo assets — Complete Business Mastery
+
+- **Four Funding Paths & Founder Psychology (free deep-dive, video):** https://youtu.be/9HCru9FA6VE
+- **Sales page:** https://cbmbook.com · **Store page:** https://wickedstacks.com/p/complete-business-mastery
+- **Share caption (paste anywhere):** Where your money comes from changes
+  everything — not just what you build, but who you become building it. Free
+  12-minute deep-dive from Complete Business Mastery: https://youtu.be/9HCru9FA6VE
+
 ## Image-post ideas (Pinterest / Instagram / Facebook)
 
 1. **Quote cards** — one sharp line from each book on the brand gradient.
