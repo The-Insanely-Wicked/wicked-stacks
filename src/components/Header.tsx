@@ -5,6 +5,7 @@ const nav = [
   { to: "/c/mindset", label: "Mind & Life" },
   { to: "/c/kids", label: "Kids' Corner" },
   { to: "/c/stack", label: "Stacks" },
+  { to: "/blog", label: "Blog" },
 ];
 
 export default function Header() {

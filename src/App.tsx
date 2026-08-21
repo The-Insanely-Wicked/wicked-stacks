@@ -1,4 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
+import BlogIndex from "./pages/BlogIndex";
+import BlogPost from "./pages/BlogPost";
 import { useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -24,6 +26,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/p/:slug" element={<ProductPage />} />
           <Route path="/c/:category" element={<CategoryPage />} />
+          <Route path="/blog" element={<BlogIndex />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

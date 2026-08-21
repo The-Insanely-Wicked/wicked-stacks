@@ -26,3 +26,7 @@
 - [DoodleAI](https://doodleai.app): Doodle-style video creation software from the same maker. $97 one-time.
 - [The Insanely Wicked](https://theinsanelywicked.com): The parent digital studio.
 - Contact: sales@theinsanelywicked.com
+
+## Blog
+
+Free articles drawn from the books at https://wickedstacks.com/blog — motivation and action, business funding psychology, algorithms and attention, the 50-true-fans math, kids and money, and judgment vs. honesty.

@@ -611,3 +611,30 @@ button:focus-visible {
   color: var(--ink-soft);
   font-weight: 400;
 }
+
+
+/* ---------- blog ---------- */
+.blog-list { display: grid; gap: 14px; margin: 26px 0; }
+.blog-card {
+  display: block; background: var(--card, #16121f); border: 1px solid var(--line, #2b2440);
+  border-radius: 14px; padding: 18px 20px; text-decoration: none; color: inherit;
+  transition: border-color .12s, transform .12s;
+}
+.blog-card:hover { border-color: #8b5cf6; transform: translateY(-1px); }
+.blog-card h2 { font-size: 1.15rem; margin: 6px 0 6px; }
+.blog-card p { color: var(--muted, #a49dbd); font-size: .95rem; margin: 0 0 8px; }
+.blog-cat {
+  font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: #a78bfa;
+}
+.blog-read { color: #a78bfa; font-size: .9rem; font-weight: 600; }
+.blog-post h2 { margin-top: 1.6em; }
+.blog-video-link {
+  display: inline-block; margin-top: 4px; font-weight: 700; color: #a78bfa;
+}
+.blog-cta {
+  background: var(--card, #16121f); border: 1px solid #8b5cf6; border-radius: 14px;
+  padding: 20px 22px; margin: 34px 0;
+}
+.blog-cta h3 { margin: 6px 0 8px; font-size: 1.25rem; }
+.blog-cta p { color: var(--muted, #a49dbd); }
