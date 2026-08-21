@@ -651,3 +651,17 @@ button:focus-visible {
 }
 .course-list { margin: 0 0 1.2em 1.2em; }
 .course-list li { margin-bottom: .45em; }
+
+.preview-note { color: var(--muted, #a49dbd); margin: -.4em 0 1em; font-size: .95rem; }
+.preview-strip {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px; margin: 0 0 34px;
+}
+.preview-strip figure { margin: 0; }
+.preview-strip img {
+  display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+  border-radius: 10px; border: 1px solid #2a2340; background: #1a1526;
+}
+.preview-strip figcaption {
+  color: var(--muted, #a49dbd); font-size: .85rem; margin-top: 8px; line-height: 1.35;
+}

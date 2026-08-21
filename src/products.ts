@@ -24,6 +24,7 @@ export interface Product {
   includes?: string[]; // slugs of products inside a stack
   image?: string; // optional cover art (path under /public)
   courses?: string[]; // course titles inside a course stack
+  previews?: { src: string; caption: string }[]; // real lesson frames
 }
 
 export const SITE = {
@@ -230,6 +231,11 @@ export const PRODUCTS: Product[] = [
     category: "courses",
     price: 49,
     badge: "Video courses",
+    previews: [
+      { src: "/previews/pm-what-is-project-management.jpg", caption: "What Is Project Management?" },
+      { src: "/previews/pm-create-a-project-plan.jpg", caption: "How to Create a Project Plan" },
+      { src: "/previews/pm-mistakes-to-avoid.jpg", caption: "5 Project Management Mistakes to Avoid" },
+    ],
     image: "/courses/project-management.png",
     formats: ["26 video lessons", "3 PDF guides", "Stream or download"],
     courses: [
@@ -260,6 +266,11 @@ export const PRODUCTS: Product[] = [
     subtitle: "Write better, speak better, negotiate better",
     category: "courses",
     price: 39,
+    previews: [
+      { src: "/previews/comm-negotiation-vs-persuasion.jpg", caption: "Negotiation vs. Persuasion" },
+      { src: "/previews/comm-persuasion-tactics.jpg", caption: "Persuasion Tactics" },
+      { src: "/previews/comm-three-types-of-negotiation.jpg", caption: "The Three Types of Negotiation" },
+    ],
     image: "/courses/communication.png",
     formats: ["19 video lessons", "2 PDF guides", "Stream or download"],
     courses: [
@@ -289,6 +300,11 @@ export const PRODUCTS: Product[] = [
     subtitle: "Five video courses on stress, focus, and holding steady",
     category: "courses",
     price: 39,
+    previews: [
+      { src: "/previews/change-fundamentals.jpg", caption: "The Fundamentals of Leading Through Change" },
+      { src: "/previews/change-5-tips-for-leading-teams.jpg", caption: "5 Tips for Leading Teams Through Change" },
+      { src: "/previews/change-empowering-employees.jpg", caption: "Empowering Employees to Navigate Change" },
+    ],
     image: "/courses/focus-resilience.png",
     formats: ["16 video lessons", "2 PDF guides", "Stream or download"],
     courses: [
@@ -348,6 +364,11 @@ export const PRODUCTS: Product[] = [
     price: 99,
     compareAt: 166,
     badge: "Best value",
+    previews: [
+      { src: "/previews/pm-four-phases.jpg", caption: "The Four Phases of Project Management" },
+      { src: "/previews/comm-negotiation-tactics.jpg", caption: "Negotiation Tactics" },
+      { src: "/previews/change-fundamentals.jpg", caption: "The Fundamentals of Leading Through Change" },
+    ],
     image: "/courses/complete-library.png",
     formats: ["83 video lessons", "10 PDF guides", "Stream or download"],
     includes: [

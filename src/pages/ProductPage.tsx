@@ -51,6 +51,23 @@ export default function ProductPage() {
           </>
         )}
 
+        {product.previews && (
+          <>
+            <h2>Look inside</h2>
+            <p className="preview-note">
+              Real frames from the lessons — this is what you get.
+            </p>
+            <div className="preview-strip">
+              {product.previews.map((p) => (
+                <figure key={p.src}>
+                  <img src={p.src} alt={p.caption} loading="lazy" />
+                  <figcaption>{p.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
+          </>
+        )}
+
         {product.description.map((para) => (
           <p key={para.slice(0, 32)} className="body-para">
             {para}
