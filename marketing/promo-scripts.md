@@ -93,6 +93,30 @@ first 3 seconds, captions on, one soft ask at the end.
 
 ---
 
+### 7. The YSST Promo — "My dog has never judged anybody"
+> My dog Frankie has never once judged another dog for how it eats, where it
+> sleeps, or what it rolls in. Humans? We can't get through breakfast without
+> judging somebody.
+>
+> That's what Your Shit Stinks Too is about. It started as a podcast — me and
+> my dog — about the one thing people hate admitting: nobody gets to ride the
+> high horse, because everybody's shit stinks. Including mine. ESPECIALLY mine.
+>
+> There's a free episode on my YouTube right now — it's four minutes, it's
+> called Frankie's Food Bowl, and if it stings a little, good. The full
+> collection is about two hours, it's twelve bucks, and every new episode I
+> make gets added to it free. The price goes up as it grows — so lock it in.
+>
+> Link's below. Frankie would want you to.
+
+## Live promo assets — Your Shit Stinks Too
+
+- **Frankie's Food Bowl (free episode, video + podcast):** https://youtu.be/cyz0DfuaF0k
+- **Collection page:** https://wickedstacks.com/p/your-shit-stinks-too ($12, price-locked, future episodes free)
+- **Share caption (paste anywhere):** My dog has more moral high ground than
+  most people I know. Free 4-minute episode of Your Shit Stinks Too — dog
+  logic vs. human moralizing: https://youtu.be/cyz0DfuaF0k
+
 ## Image-post ideas (Pinterest / Instagram / Facebook)
 
 1. **Quote cards** — one sharp line from each book on the brand gradient.
