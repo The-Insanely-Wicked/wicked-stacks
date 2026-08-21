@@ -113,13 +113,13 @@ export const PRODUCTS: Product[] = [
     subtitle: "Navigating Social Media, Influence, and the Future of Connection",
     category: "mindset",
     price: 19,
-    formats: ["Ebook (PDF)", "Audiobook — coming soon"],
+    formats: ["Ebook (PDF)", "Audiobook (MP3)"],
     blurb:
       "A sharp, funny deep-dive into what social media is actually doing to our brains, identities, and culture — and how to use it without being used.",
     description: [
       "From BBS boards to algorithmic feeds, The Digital Tapestry traces how we got here and what it's costing us: identity performance, influencer culture, the attention economy, misinformation, and the quiet rewiring of how we connect.",
       "Nine chapters plus case studies and reflection exercises, written by a slightly sarcastic, overly caffeinated guide who has read the research and refuses to be boring about it.",
-      "An audiobook edition is in production — buyers get it added to their library at no extra cost when it ships.",
+      "The full audiobook edition is included with every copy — read it, listen to it, or both.",
     ],
     bullets: [
       "9 chapters + case studies + reflection prompts",
@@ -211,7 +211,7 @@ export const PRODUCTS: Product[] = [
     bullets: [
       "Stuck No More (~37,000 words of practical self-help)",
       "The Digital Tapestry (9 chapters on reclaiming your attention)",
-      "Digital Tapestry audiobook added free when it ships",
+      "Digital Tapestry audiobook now included",
     ],
   },
   {
@@ -243,7 +243,7 @@ export const PRODUCTS: Product[] = [
     category: "stack",
     price: 79,
     compareAt: 126,
-    formats: ["6 books + workbooks + audiobook"],
+    formats: ["6 books + workbooks + 2 audiobooks"],
     badge: "The whole stack",
     includes: [
       "complete-business-mastery",
