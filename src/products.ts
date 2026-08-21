@@ -335,6 +335,11 @@ export const PRODUCTS: Product[] = [
     subtitle: "Three video courses for building a career on purpose",
     category: "courses",
     price: 39,
+    previews: [
+      { src: "/previews/career-asking-for-a-raise.jpg", caption: "Asking for a Raise" },
+      { src: "/previews/newpro-first-week-on-the-job.jpg", caption: "6 Tips for Your First Week on the Job" },
+      { src: "/previews/solve-complicated-vs-complex.jpg", caption: "Managing Complicated vs. Complex Problems" },
+    ],
     image: "/courses/career-growth.png",
     formats: ["22 video lessons", "3 PDF guides", "Stream or download"],
     courses: [
