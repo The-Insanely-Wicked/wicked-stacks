@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
     subtitle: "The Ultimate (and Slightly Sarcastic) Guide to Building, Running, and Growing Any Business",
     category: "business",
     price: 47,
-    formats: ["Ebook (PDF + EPUB)", "Resource Pack (PDF)"],
+    formats: ["Ebook (PDF + EPUB)", "Resource Pack (PDF)", "4 audio deep-dives (M4A) · ~2 hours"],
     badge: "Flagship",
     blurb:
       "17 chapters of real frameworks, real numbers, and zero guru fluff — plus a full toolkit of templates, scripts, and scorecards.",
@@ -53,6 +53,7 @@ export const PRODUCTS: Product[] = [
       "This is not a motivational poster stretched into a book. Complete Business Mastery walks through the entire life of a business — mindset, unit economics, market research, branding, sales systems, operations, hiring, automation, and scaling — with the numbers shown and the nonsense called out.",
       "It took a year and a half to write because it doesn't skip the hard parts: how to size a market three different ways, when automation actually pays for itself (with the math), and why the butcher always gets paid.",
       "The included Resource Pack turns the book into action: fill-in-the-blank financial templates, cold email and call scripts, objection-handling lines, hiring scorecards, 30-60-90 plans, SOP templates, and go-to-market checklists — each cross-referenced to the chapter that explains it.",
+      "New: four bonus audio deep-dives (~2 hours) now included free — Why Rational Leaders Make Destructive Decisions, The Brutal Math of Strategic Sacrifice, Why Profitable Companies Go Bankrupt, and Four Funding Paths and Founder Psychology. The book's hardest ideas, argued out loud for your commute.",
     ],
     bullets: [
       "17 chapters, ~130 pages, written by a founder — not a content farm",
@@ -60,6 +61,7 @@ export const PRODUCTS: Product[] = [
       "Sales scripts, objection handling, and closing systems",
       "Hiring scorecards, 30-60-90 plans, and SOP templates in the Resource Pack",
       "Automation ROI math you can actually run on your own business",
+      "4 bonus audio deep-dives included — listen to the big ideas argued out",
     ],
   },
   {
@@ -234,7 +236,7 @@ export const PRODUCTS: Product[] = [
       "Both companion workbooks included. This is the stack for someone who's serious.",
     ],
     bullets: [
-      "Complete Business Mastery + Resource Pack",
+      "Complete Business Mastery + Resource Pack + 4 audio deep-dives",
       "From Zero to Online Income + Workbook",
       "The full beginner-to-operator path, in order",
     ],
@@ -306,6 +308,7 @@ export const PRODUCTS: Product[] = [
     ],
     bullets: [
       "All 4 adult titles + both workbooks/resource packs",
+      "CBM's 4 bonus audio deep-dives included",
       "Both Penny kids' books + audiobook",
       "Future format upgrades to included titles, free",
     ],
