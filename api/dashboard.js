@@ -18,6 +18,7 @@ const PLINK_NAMES = {
   plink_1U6XbHEUuXAf9uyBhknznt2Z: "Clear Head Stack",
   plink_1U6XbKEUuXAf9uyBSvsnfcQf: "Penny's Story Stack",
   plink_1U6XbdEUuXAf9uyBsajaEoLj: "Everything Stack",
+  plink_1U6sDrEUuXAf9uyByfTSgSq9: "Everything Stack",
   plink_1U6n3KEUuXAf9uyBBnZog3bN: "Tapestry Debates",
   plink_1U6ny3EUuXAf9uyB95des2ne: "Your Shit Stinks Too",
   plink_1U6oBsEUuXAf9uyBzCcmjiyT: "Your Shit Stinks Too",

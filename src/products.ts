@@ -287,11 +287,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "everything-stack",
-    buyUrl: "https://buy.stripe.com/3cIfZh9WBdt90Jb7pHcQU08",
+    buyUrl: "https://buy.stripe.com/14A6oH3ydagXcrTdO5cQU0h",
     title: "The Everything Stack",
     subtitle: "The entire Wicked Stacks library",
     category: "stack",
-    price: 79,
+    price: 89,
     compareAt: 126,
     formats: ["6 books + workbooks + 3 audiobooks"],
     badge: "The whole stack",
@@ -306,7 +306,7 @@ export const PRODUCTS: Product[] = [
     blurb:
       "Every book, every workbook, every audiobook we've got — one price, and future format upgrades included.",
     description: [
-      "All six titles, all companion workbooks and resource packs, all audio — plus any format upgrades to these titles (like the Digital Tapestry audiobook) added to your library free when they ship.",
+      "All six titles, all companion workbooks and resource packs, all audio — three full audiobooks and CBM's bonus deep-dives included. The library keeps growing and the price climbs with it: buy once, lock it in, and every future format upgrade lands in your library free.",
     ],
     bullets: [
       "All 4 adult titles + both workbooks/resource packs",
