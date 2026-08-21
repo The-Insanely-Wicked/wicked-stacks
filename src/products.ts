@@ -151,6 +151,29 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
+    slug: "your-shit-stinks-too",
+    buyUrl: "https://buy.stripe.com/00weVdfgV2Ov9fHh0hcQU0f",
+    title: "Your Shit Stinks Too",
+    subtitle: "The Audio Collection",
+    category: "mindset",
+    price: 9,
+    badge: "Audio · growing",
+    formats: ["3 audio deep-dives (M4A) · ~2 hours", "New episodes added free"],
+    blurb:
+      "Nobody gets to ride the high horse — a growing collection of audio deep-dives on hypocrisy, bias, and the mess we're all standing in. Born as a podcast, starring Michael and his dog Frankie.",
+    description: [
+      "Your Shit Stinks Too started as a podcast with an unlikely duo: Michael and his dog Frankie, calling out the one thing humans hate admitting — everybody's shit stinks, including yours, including his.",
+      "This collection turns that story into AI-hosted deep-dive conversations that dig into the big uncomfortable stuff: The High Horse of Human Hypocrisy (~40 min), Why Our Brains Defend Systemic Inequality (~43 min), and Shared Fallibility and Systemic Racism (~38 min).",
+      "It's a living collection — new episodes get added as they're made, and every buyer gets them emailed free. Buy it once, and it keeps growing.",
+    ],
+    bullets: [
+      "3 deep-dive episodes, ~2 hours of audio",
+      "Honest, funny, and uncomfortable in the good way",
+      "New episodes emailed to you free as they drop",
+      "Listen anywhere — it's yours, no app required",
+    ],
+  },
+  {
     slug: "pennys-piggy-bank",
     buyUrl: "https://buy.stripe.com/00wbJ17Ot3SzgI9eS9cQU04",
     title: "Penny's Piggy Bank",

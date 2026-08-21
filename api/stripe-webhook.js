@@ -26,6 +26,7 @@ const PLINK_TO_GROUP = {
   plink_1U6XbKEUuXAf9uyBSvsnfcQf: "Purchased – Penny's Story Stack",
   plink_1U6XbdEUuXAf9uyBsajaEoLj: "Purchased – Everything Stack",
   plink_1U6n3KEUuXAf9uyBBnZog3bN: "Purchased – Tapestry Debates",
+  plink_1U6ny3EUuXAf9uyB95des2ne: "Purchased – Your Shit Stinks Too",
 };
 
 const ML_BASE = "https://connect.mailerlite.com/api";
