@@ -425,11 +425,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "clear-head-stack",
-    buyUrl: "https://buy.stripe.com/3cI8wPb0F4WD8bD5hzcQU06",
+    buyUrl: "https://buy.stripe.com/8x25kD2u92OvbnPeS9cQU0o",
     title: "The Clear Head Stack",
     subtitle: "Get unstuck. Get your attention back.",
     category: "stack",
-    price: 29,
+    price: 39,
     compareAt: 46,
     formats: ["2 ebooks + 2 audiobooks + The Restart Kit"],
     includes: ["stuck-no-more", "the-digital-tapestry"],
@@ -443,6 +443,7 @@ export const PRODUCTS: Product[] = [
       "The Digital Tapestry (9 chapters on reclaiming your attention)",
       "Both audiobooks now included — Stuck No More and The Digital Tapestry",
       "The Restart Kit workbook — 14 worksheets + the Emergency Restart Card",
+      "Price locked at purchase — future upgrades to both books are free",
     ],
   },
   {

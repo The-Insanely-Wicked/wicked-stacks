@@ -24,6 +24,7 @@ const PLINK_TO_GROUP = {
   plink_1U6XbiEUuXAf9uyB5xU2A64J: "Purchased – DoodleAI",
   plink_1U6XbCEUuXAf9uyBfekfOOQ8: "Purchased – Business Starter Stack",
   plink_1U6XbHEUuXAf9uyBhknznt2Z: "Purchased – Clear Head Stack",
+  plink_1U71q3EUuXAf9uyBY9EgkrGZ: "Purchased – Clear Head Stack",
   plink_1U6XbKEUuXAf9uyBSvsnfcQf: "Purchased – Penny's Story Stack",
   plink_1U6XbdEUuXAf9uyBsajaEoLj: "Purchased – Everything Stack",
   plink_1U6sDrEUuXAf9uyByfTSgSq9: "Purchased – Everything Stack",

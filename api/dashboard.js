@@ -17,6 +17,7 @@ const PLINK_NAMES = {
   plink_1U6XbiEUuXAf9uyB5xU2A64J: "DoodleAI",
   plink_1U6XbCEUuXAf9uyBfekfOOQ8: "Business Starter Stack",
   plink_1U6XbHEUuXAf9uyBhknznt2Z: "Clear Head Stack",
+  plink_1U71q3EUuXAf9uyBY9EgkrGZ: "Clear Head Stack",
   plink_1U6XbKEUuXAf9uyBSvsnfcQf: "Penny's Story Stack",
   plink_1U6XbdEUuXAf9uyBsajaEoLj: "Everything Stack",
   plink_1U6sDrEUuXAf9uyByfTSgSq9: "Everything Stack",
