@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ onCategorySelect, onSearch, selectedCat
               M
             </div>
             <div>
-              <h1 className="text-xl font-bold tracking-tight">MENSREAD</h1>
+              <h1 className="text-xl font-bold tracking-tight">MENS<span className="text-amber-500">READ</span></h1>
               <p className="text-xs text-slate-400">Success • Style • Substance</p>
             </div>
           </div>

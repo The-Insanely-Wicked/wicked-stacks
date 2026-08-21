@@ -574,7 +574,7 @@ const AppLayout: React.FC = () => {
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="md:col-span-2">
-                <h2 className="text-3xl font-serif font-bold mb-4">WomanWise</h2>
+                <h2 className="text-3xl font-serif font-bold mb-4">Woman<span className="italic text-rose-400">Wise</span></h2>
                 <p className="text-stone-400 mb-4">
                   Empowering professional women with insights on career, wellness, finance, and lifestyle.
                 </p>
@@ -617,7 +617,7 @@ const AppLayout: React.FC = () => {
       <header className="bg-white border-b border-stone-200 sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-3xl font-serif font-bold text-stone-800">WomanWise</h1>
+            <h1 className="text-3xl font-serif font-bold text-stone-800">Woman<span className="italic text-rose-600">Wise</span></h1>
             <div className="hidden md:flex items-center gap-6">
 
               <nav className="flex items-center gap-6 text-sm font-medium text-stone-600">
@@ -915,7 +915,7 @@ const AppLayout: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div className="md:col-span-2">
-              <h2 className="text-3xl font-serif font-bold mb-4">WomanWise</h2>
+              <h2 className="text-3xl font-serif font-bold mb-4">Woman<span className="italic text-rose-400">Wise</span></h2>
               <p className="text-stone-400 mb-4 max-w-md">
                 Empowering professional women with expert insights on career advancement, financial independence, wellness, and lifestyle. Join our community of ambitious women building extraordinary lives.
               </p>

@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
               <div className="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg flex items-center justify-center font-bold text-xl">
                 M
               </div>
-              <span className="text-xl font-bold">MENSREAD</span>
+              <span className="text-xl font-bold">MENS<span className="text-amber-500">READ</span></span>
             </div>
             <p className="text-slate-400 text-sm">
               Your destination for career success, personal finance, style, and lifestyle content tailored for the ambitious modern man.
