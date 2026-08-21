@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://doodleai.app/sitemap.xml

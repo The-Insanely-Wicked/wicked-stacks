@@ -1,4 +1,5 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { Article } from '@/types/article';
 import Header from './Header';
 import Footer from './Footer';
@@ -15,6 +16,8 @@ const AppLayout: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
+  const { slug: routeSlug } = useParams();
+  const navigate = useNavigate();
 
   // Combine all articles
   const allArticles = useMemo(() => [
@@ -48,12 +51,31 @@ const AppLayout: React.FC = () => {
   };
 
   const handleArticleSelect = (article: Article) => {
-    setSelectedArticle(article);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    navigate(`/article/${article.slug}`);
   };
 
+  // Keep the view in sync with the URL so every article has a real address
+  useEffect(() => {
+    if (routeSlug) {
+      const a = allArticles.find(x => x.slug === routeSlug);
+      if (a) {
+        setSelectedArticle(a);
+        window.scrollTo({ top: 0 });
+      }
+    } else {
+      setSelectedArticle(null);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [routeSlug, allArticles]);
+
+  useEffect(() => {
+    document.title = selectedArticle
+      ? `${selectedArticle.title} | MensRead`
+      : 'MensRead — Gear, Habits & Lifestyle for Men';
+  }, [selectedArticle]);
+
   const handleBackToList = () => {
-    setSelectedArticle(null);
+    navigate('/');
   };
 
   // Get featured article (first article or first in filtered list)

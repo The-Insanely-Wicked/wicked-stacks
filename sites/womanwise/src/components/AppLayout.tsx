@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { allArticles, categories, getArticleBySlug, getRelatedArticles, Article } from '@/data/allArticles';
 import { AdSection } from './AdPlaceholder';
 import AmazonProductLink, { ProductCallout } from './AmazonProductLink';
@@ -20,6 +21,8 @@ interface ShareCounts {
 const AppLayout: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [currentView, setCurrentView] = useState<'home' | 'article' | 'unsubscribe'>('home');
+  const { slug: routeSlug } = useParams();
+  const navigate = useNavigate();
   const [currentArticle, setCurrentArticle] = useState<Article | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [email, setEmail] = useState('');
@@ -178,8 +181,7 @@ const AppLayout: React.FC = () => {
   };
 
   const handleBackToHome = () => {
-    setCurrentView('home');
-    setCurrentArticle(null);
+    navigate('/');
   };
 
   const filteredArticles = useMemo(() => {
@@ -205,10 +207,30 @@ const AppLayout: React.FC = () => {
   }, []);
 
   const handleArticleClick = (article: Article) => {
-    setCurrentArticle(article);
-    setCurrentView('article');
-    window.scrollTo(0, 0);
+    navigate(`/article/${article.slug}`);
   };
+
+  // Keep the view in sync with the URL so every article has a real address
+  useEffect(() => {
+    if (routeSlug) {
+      const a = getArticleBySlug(routeSlug);
+      if (a) {
+        setCurrentArticle(a);
+        setCurrentView('article');
+        window.scrollTo(0, 0);
+      }
+    } else if (currentView === 'article') {
+      setCurrentView('home');
+      setCurrentArticle(null);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [routeSlug]);
+
+  useEffect(() => {
+    document.title = currentView === 'article' && currentArticle
+      ? `${currentArticle.title} | WomanWise`
+      : 'WomanWise — Career, Confidence & Life for Women';
+  }, [currentView, currentArticle]);
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();

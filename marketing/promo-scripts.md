@@ -125,6 +125,33 @@ first 3 seconds, captions on, one soft ask at the end.
   everything — not just what you build, but who you become building it. Free
   12-minute deep-dive from Complete Business Mastery: https://youtu.be/9HCru9FA6VE
 
+## Promoting the article sites — WomanWise & MensRead
+
+The article sites earn from Amazon clicks, so their promo job is simple: get
+readers onto articles. Two channels do 90% of the work:
+
+**Pinterest (the big one — do this weekly, 30 min):**
+- Every article is a pin: vertical image (Canva template once, reuse forever),
+  article title as the pin title, link to the article URL.
+- WomanWise is Pinterest's home turf — career, wellness, and lifestyle pins
+  live for YEARS. Pin 5 articles/week from womanwiselife.com until all 25 are up,
+  then re-pin seasonal ones.
+- MensRead pins: gear guides and fitness articles do best. Same drill from
+  mensreaddaily.com.
+
+**Facebook groups / Reddit (free, slow, real):**
+- Answer real questions in career-women and men's-lifestyle spaces; link the
+  matching article only when it genuinely answers the question.
+
+**Share captions (paste anywhere):**
+- WomanWise: "25+ no-fluff articles on career, money, and getting your life
+  back — written for women building their next chapter: https://womanwiselife.com"
+- MensRead: "Straight talk on gear, money, and habits that actually stick —
+  no bro-science: https://mensreaddaily.com"
+
+**The flywheel note:** every article carries house ads for the books and
+DoodleAI — so article traffic feeds the store without any extra work.
+
 ## Image-post ideas (Pinterest / Instagram / Facebook)
 
 1. **Quote cards** — one sharp line from each book on the brand gradient.

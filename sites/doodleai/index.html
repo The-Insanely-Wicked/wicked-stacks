@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DoodleAI — Doodle Videos, Drawn by AI</title>
+  <meta name="description" content="DoodleAI turns any text or script into a professional whiteboard, blackboard, or glassboard doodle video in minutes. 300+ templates, 160+ voices, 60+ languages. No design skills needed." />
+  <link rel="canonical" href="https://doodleai.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://doodleai.app/" />
+  <meta property="og:title" content="DoodleAI — Doodle Videos, Drawn by AI" />
+  <meta property="og:description" content="Turn any script into a professional doodle video in minutes. AI does the drawing." />
+  <meta property="og:image" content="https://doodleai.app/logo-full.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DoodleAI — Doodle Videos, Drawn by AI" />
+  <meta name="twitter:image" content="https://doodleai.app/logo-full.png" />
+  <meta name="theme-color" content="#0e1220" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "DoodleAI",
+    "url": "https://doodleai.app/",
+    "image": "https://doodleai.app/logo-full.png",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Web browser",
+    "description": "Paste your script and DoodleAI draws the video: AI-generated whiteboard, blackboard, and glassboard doodle videos with natural voiceovers in 60+ languages. 300+ templates, no design skills needed.",
+    "offers": { "@type": "Offer", "price": "97", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+    "publisher": { "@type": "Organization", "name": "The Insanely Wicked", "url": "https://theinsanelywicked.com/" }
+  }
+  </script>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/logo-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* DoodleAI has its own brand (license requires separation from the
+       DoodleMaker name; keeping it visually distinct from Insanely Wicked
+       too): clean "whiteboard" light theme with marker-blue and marker-red
+       accents — like the product it sells. Single committed light theme. */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --paper: #fbfcfe; --paper-warm: #f2f5fb; --ink: #17223b;
+      --ink-soft: #5a6780; --line: #dbe2f0;
+      --blue: #2563eb; --red: #e64545; --green: #12a150; --yellow: #f5b31b;
+    }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      background: var(--paper); color: var(--ink);
+      font-family: "Inter", system-ui, sans-serif;
+      line-height: 1.7; font-size: 1.05rem;
+    }
+    .wrap { max-width: 1020px; margin: 0 auto; padding: 0 24px; }
+    h1, h2, h3 { font-family: "Sora", system-ui, sans-serif; line-height: 1.15; text-wrap: balance; }
+    a { color: var(--blue); }
+
+    .topbar { border-bottom: 2px solid var(--ink); background: var(--paper); }
+    .topbar .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; }
+    .brand { font-family: "Sora", system-ui, sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--ink); text-decoration: none; }
+    .brand span { color: var(--blue); }
+    .topbar a.cta-small {
+      background: var(--ink); color: var(--paper); text-decoration: none;
+      font-weight: 700; border-radius: 10px; padding: 9px 18px; font-size: 0.95rem;
+    }
+
+    .hero { padding: 76px 0 56px; text-align: center;
+      background:
+        radial-gradient(50% 60% at 15% 10%, rgba(37, 99, 235, 0.08), transparent 60%),
+        radial-gradient(40% 50% at 85% 15%, rgba(230, 69, 69, 0.07), transparent 60%);
+    }
+    .hero h1 { font-size: clamp(2.4rem, 6.5vw, 3.9rem); font-weight: 800; max-width: 18ch; margin: 0 auto; }
+    .hero h1 .scribble { color: var(--blue); position: relative; }
+    .hero .sub { font-size: 1.25rem; color: var(--ink-soft); max-width: 44rem; margin: 18px auto 0; }
+    .cta-btn {
+      display: inline-block; background: var(--blue); color: #fff;
+      font-weight: 800; text-decoration: none; border-radius: 12px;
+      padding: 16px 34px; font-size: 1.12rem; margin-top: 30px;
+      font-family: "Sora", system-ui, sans-serif;
+      box-shadow: 4px 4px 0 var(--ink);
+    }
+    .cta-btn:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--ink); }
+    @media (prefers-reduced-motion: reduce) { .cta-btn:hover { transform: none; } }
+    .cta-note { display: block; color: var(--ink-soft); font-size: 0.92rem; margin-top: 12px; }
+
+    .video-frame {
+      max-width: 760px; margin: 44px auto 0; border: 3px solid var(--ink);
+      border-radius: 16px; background: var(--paper-warm); aspect-ratio: 16/9;
+      overflow: hidden;
+      box-shadow: 8px 8px 0 rgba(23, 34, 59, 0.12);
+    }
+    /* Replace the placeholder div with the real sales video when hosted:
+       <video controls poster="/poster.jpg" src="URL-to-salesvideo.mp4"> */
+
+    section { padding: 52px 0; }
+    section.alt { background: var(--paper-warm); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    h2 { font-size: clamp(1.6rem, 4vw, 2.1rem); margin-bottom: 10px; text-align: center; }
+    .section-sub { text-align: center; color: var(--ink-soft); max-width: 44rem; margin: 0 auto 30px; }
+
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+    .step { background: var(--paper); border: 2px solid var(--ink); border-radius: 14px; padding: 22px; box-shadow: 5px 5px 0 rgba(23, 34, 59, 0.1); }
+    .step .num {
+      width: 34px; height: 34px; border-radius: 50%; background: var(--yellow);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-family: "Sora", system-ui, sans-serif; margin-bottom: 12px;
+      border: 2px solid var(--ink);
+    }
+    .step h3 { font-size: 1.1rem; margin-bottom: 6px; }
+    .step p { color: var(--ink-soft); font-size: 0.97rem; }
+
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .feature { display: flex; gap: 12px; align-items: flex-start; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+    .feature .ico { font-size: 1.4rem; }
+    .feature h3 { font-size: 1.02rem; margin-bottom: 3px; }
+    .feature p { color: var(--ink-soft); font-size: 0.94rem; }
+
+    .styles-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; max-width: 760px; margin: 0 auto; }
+    .style-card { border: 2px solid var(--ink); border-radius: 14px; padding: 26px 20px; text-align: center; font-weight: 700; font-family: "Sora", system-ui, sans-serif; }
+    .style-card.white { background: #ffffff; color: #17223b; }
+    .style-card.black { background: #1c2333; color: #f5f7ff; }
+    .style-card.glass { background: linear-gradient(135deg, #dcebfa, #eef4fb); color: #17223b; }
+    .style-card small { display: block; font-family: "Inter", system-ui, sans-serif; font-weight: 500; color: inherit; opacity: 0.75; margin-top: 6px; }
+
+    .price-box {
+      max-width: 560px; margin: 0 auto; text-align: center;
+      border: 3px solid var(--ink); border-radius: 18px; background: var(--paper);
+      padding: 38px 30px; box-shadow: 8px 8px 0 rgba(37, 99, 235, 0.25);
+    }
+    .price-box .price { font-size: 3.2rem; font-weight: 800; font-family: "Sora", system-ui, sans-serif; color: var(--blue); }
+    .price-box .strike { color: var(--ink-soft); font-weight: 600; font-size: 1.8rem; text-decoration: line-through; margin-right: 8px; }
+    .promo-strip { background: #fff7e0; border: 1px dashed var(--yellow); border-radius: 10px; padding: 8px 14px; font-size: 0.98rem; margin-bottom: 16px; }
+    .exit-overlay { position: fixed; inset: 0; background: rgba(23, 34, 59, 0.65); display: none; align-items: center; justify-content: center; z-index: 100; padding: 20px; }
+    .exit-overlay.open { display: flex; }
+    .exit-modal { position: relative; background: var(--paper); border: 3px solid var(--ink); border-radius: 16px; padding: 34px 30px; max-width: 430px; text-align: center; box-shadow: 8px 8px 0 rgba(37, 99, 235, 0.3); }
+    .exit-modal h2 { margin-bottom: 10px; font-size: 1.4rem; }
+    .exit-modal p { color: var(--ink-soft); margin-bottom: 14px; }
+    .exit-code { font-family: "Sora", system-ui, sans-serif; font-weight: 800; font-size: 1.7rem; letter-spacing: 0.06em; color: var(--red); background: var(--paper-warm); border: 2px dashed var(--red); border-radius: 10px; padding: 10px 16px; display: inline-block; margin-bottom: 14px; }
+    .exit-close { position: absolute; top: 8px; right: 14px; background: none; border: none; color: var(--ink-soft); font-size: 1.7rem; cursor: pointer; line-height: 1; }
+    .exit-fine { font-size: 0.8rem; margin-top: 10px; }
+    .price-box .per { color: var(--ink-soft); }
+    .price-box ul { list-style: none; margin: 20px auto; max-width: 24rem; text-align: left; display: grid; gap: 9px; }
+    .price-box li { padding-left: 26px; position: relative; }
+    .price-box li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 800; }
+
+    .faq { display: grid; gap: 8px; max-width: 700px; margin: 20px auto 0; }
+    details { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; }
+    summary { cursor: pointer; font-weight: 700; }
+    details p { margin-top: 10px; color: var(--ink-soft); }
+
+    footer { border-top: 2px solid var(--ink); padding: 26px 0 40px; color: var(--ink-soft); font-size: 0.9rem; text-align: center; }
+    a:focus-visible, .cta-btn:focus-visible { outline: 3px solid var(--red); outline-offset: 2px; }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9J5RX3JNFY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9J5RX3JNFY');
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a[href*="buy.stripe.com"]') : null;
+      if (a) gtag('event', 'begin_checkout', { product: 'DoodleAI' });
+    }, true);
+  </script>
+</head>
+<body>
+
+  <nav class="topbar">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="DoodleAI home"><img src="logo-wordmark.png" alt="DoodleAI" style="height:46px;display:block"></a>
+      <a class="cta-small" href="#pricing">Get DoodleAI</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Doodle videos, <span class="scribble">drawn by AI</span>, done in minutes</h1>
+      <p class="sub">Paste your script. DoodleAI reads it, picks the right doodles, draws the scenes, and adds a natural voiceover — a professional whiteboard video without touching a design tool.</p>
+      <!-- TODO: replace href with Stripe Payment Link / checkout URL -->
+      <a class="cta-btn" href="https://buy.stripe.com/aFaaEX0m1fBh3VneS9cQU09">Start making videos →</a>
+      <span class="cta-note">No design skills. No editing timeline anxiety. 30-day money-back guarantee.</span>
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/EIJTN-QCmE4" title="DoodleAI demo video"
+          style="width:100%;height:100%;border:0;border-radius:13px"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <div style="text-align:center;margin-top:26px">
+        <a class="cta-btn" href="https://buy.stripe.com/aFaaEX0m1fBh3VneS9cQU09">Get DoodleAI now →</a>
+        <span class="cta-note">One-time price · code SAVE25 takes $25 off at checkout</span>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2>Three steps. That's the whole workflow.</h2>
+      <p class="section-sub">If you can paste text, you can make a doodle video.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Paste your text</h3>
+          <p>A script, a blog post, a product pitch — anything. Or start from one of 300+ ready-made templates with voiceovers already recorded.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>AI draws the video</h3>
+          <p>DoodleAI reads your words, finds matching doodle scenes and characters, and builds the slides automatically. Tweak anything with drag &amp; drop.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Add a voice &amp; export</h3>
+          <p>Pick from 160+ natural voices in 60+ languages (or record your own), then export in full HD. Post it, run it as an ad, send it to a client.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Whiteboard. Blackboard. Glassboard.</h2>
+      <p class="section-sub">Switch styles with one click — colors and elements adapt automatically. Or use any custom background you want.</p>
+      <div class="styles-row">
+        <div class="style-card white">Whiteboard<small>the classic explainer look</small></div>
+        <div class="style-card black">Blackboard<small>chalk-talk energy</small></div>
+        <div class="style-card glass">Glassboard<small>modern &amp; polished</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Everything's included</h2>
+      <p class="section-sub">The features that usually cost three subscriptions, in one app.</p>
+      <div class="features">
+        <div class="feature"><span class="ico">🤖</span><div><h3>AI video builder</h3><p>Text in, doodle video out — the AI matches doodles to your words automatically.</p></div></div>
+        <div class="feature"><span class="ico">🗣️</span><div><h3>160+ lifelike voices</h3><p>Natural text-to-speech in 60+ languages and accents, male and female. Or record your own.</p></div></div>
+        <div class="feature"><span class="ico">🌍</span><div><h3>1-click translation</h3><p>Translate a finished video into 60+ languages and reach audiences your competitors can't.</p></div></div>
+        <div class="feature"><span class="ico">🎨</span><div><h3>300+ templates</h3><p>Ready-made videos across the hottest niches, with effects and voiceovers included.</p></div></div>
+        <div class="feature"><span class="ico">🖼️</span><div><h3>Millions of assets</h3><p>Doodle images, icons, and characters, plus built-in stock and royalty-free music libraries.</p></div></div>
+        <div class="feature"><span class="ico">📸</span><div><h3>Photo → sketch</h3><p>Turn any photo into a doodle-style sketch automatically. Great for logos and products.</p></div></div>
+        <div class="feature"><span class="ico">🎬</span><div><h3>Full HD export</h3><p>Unlimited videos, rendered in crisp 1080p. No watermarks on your work.</p></div></div>
+        <div class="feature"><span class="ico">💼</span><div><h3>Commercial license</h3><p>Make videos for your own business — or sell them to clients and keep every dollar.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Who's using it?</h2>
+      <p class="section-sub">Doodle videos consistently out-hold viewer attention against talking-head and stock-footage video. That's why they're everywhere.</p>
+      <div class="features">
+        <div class="feature"><span class="ico">🏪</span><div><h3>Local businesses</h3><p>Explainer videos for services, promos, and ads that stop the scroll.</p></div></div>
+        <div class="feature"><span class="ico">🎓</span><div><h3>Course creators</h3><p>Turn lessons into engaging video without filming yourself.</p></div></div>
+        <div class="feature"><span class="ico">📣</span><div><h3>Marketers &amp; agencies</h3><p>Video sales letters, ads, and client work at production speed.</p></div></div>
+        <div class="feature"><span class="ico">✍️</span><div><h3>Authors &amp; creators</h3><p>Book trailers, channel intros, story videos — we make ours with it too.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <h2>Simple pricing</h2>
+      <p class="section-sub">One plan, everything included.</p>
+      <div class="price-box">
+        <!-- License note: DoodleMaker.com lists $69 with a $20-off promo
+             = $49 effective. List price $97 and promo SAVE25 (→$72) sit
+             above their $69 list; exit code DOODLE48 (→$49) matches their
+             promo-effective floor exactly — never go below $49. Create
+             both codes in Stripe and enable "allow promotion codes" on
+             the Payment Link. -->
+        <p class="promo-strip">🎉 Launch special: use code <strong>SAVE25</strong> at checkout for <strong>$25 off</strong></p>
+        <p class="price"><s class="strike">$97</s> $72</p>
+        <p class="per">one-time with code SAVE25 · unlimited videos</p>
+        <ul>
+          <li>Unlimited doodle videos in full HD</li>
+          <li>300+ templates, millions of doodle assets</li>
+          <li>160+ voices, 60+ languages, 1-click translation</li>
+          <li>Whiteboard, blackboard &amp; glassboard styles</li>
+          <li>Commercial license — sell videos to clients</li>
+          <li>Training videos in your member area</li>
+        </ul>
+        <a class="cta-btn" href="https://buy.stripe.com/aFaaEX0m1fBh3VneS9cQU09">Get DoodleAI now</a>
+        <span class="cta-note">Secure checkout · 30-day money-back guarantee</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Fair questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Do I need any design or video skills?</summary>
+          <p>No. Paste text, pick a style, choose a voice. The AI handles the drawing and animation. If you can write an email, you can make a video.</p>
+        </details>
+        <details>
+          <summary>Is it really unlimited?</summary>
+          <p>Yes — make as many videos as you want. Fair-use applies at extreme volumes, like any platform.</p>
+        </details>
+        <details>
+          <summary>Can I sell the videos I make?</summary>
+          <p>Yes. The commercial license is included — agencies and freelancers use DoodleAI to deliver client videos every day.</p>
+        </details>
+        <details>
+          <summary>What languages does it support?</summary>
+          <p>60+ languages for both text-to-speech voices and 1-click translation of finished videos.</p>
+        </details>
+        <details>
+          <summary>Is there training?</summary>
+          <p>Yes — step-by-step tutorial videos are waiting inside your member area the moment you log in.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 DoodleAI · <a href="mailto:support@doodleai.app">support@doodleai.app</a></p>
+    </div>
+  </footer>
+
+  <!-- Exit-intent offer: fires once per session when the cursor leaves the
+       top of the viewport. DOODLE48 = $48 off → $49 (matches the
+       DoodleMaker promo-effective floor; never go lower). -->
+  <div class="exit-overlay" id="exit-overlay" role="dialog" aria-modal="true" aria-labelledby="exit-title">
+    <div class="exit-modal">
+      <button class="exit-close" id="exit-close" aria-label="Close">×</button>
+      <h2 id="exit-title">Wait — grab the best deal we've got</h2>
+      <p>Before you go: this code knocks DoodleAI down to <strong>$49</strong> — the lowest we offer, period.</p>
+      <p class="exit-code">DOODLE48</p><br />
+      <a class="cta-btn" href="#pricing" id="exit-cta">Use my code →</a>
+      <p class="exit-fine">One use per customer. Enter it at checkout.</p>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var KEY = "doodleai-exit-seen";
+      var overlay = document.getElementById("exit-overlay");
+      function close() { overlay.classList.remove("open"); }
+      document.getElementById("exit-close").addEventListener("click", close);
+      document.getElementById("exit-cta").addEventListener("click", close);
+      overlay.addEventListener("click", function (e) { if (e.target === overlay) close(); });
+      document.addEventListener("mouseout", function (e) {
+        if (e.clientY <= 0 && !sessionStorage.getItem(KEY)) {
+          sessionStorage.setItem(KEY, "1");
+          overlay.classList.add("open");
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

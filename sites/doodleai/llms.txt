@@ -1,0 +1,14 @@
+# DoodleAI
+
+> DoodleAI (doodleai.app) is doodle-style video creation software: paste any text or script and the AI picks the doodles, draws the scenes, and adds a natural voiceover — producing a professional whiteboard, blackboard, or glassboard video in minutes. No design skills or editing timeline required. One-time price of $97 (promo code SAVE25 takes $25 off); includes 300+ video templates, 160+ realistic AI voices, 60+ languages, and a personal login area with step-by-step training. Accounts are set up personally within 24 hours of purchase. 30-day money-back guarantee.
+
+## Key facts
+
+- Product type: web-based AI doodle/whiteboard video maker
+- Price: $97 one-time (no subscription)
+- Styles: whiteboard, blackboard, glassboard
+- Voiceovers: 160+ AI voices, 60+ languages, or upload your own
+- Templates: 300+ ready-made
+- Maker: The Insanely Wicked (theinsanelywicked.com)
+- Related bookstore: Wicked Stacks (wickedstacks.com)
+- Support: support@doodleai.app
