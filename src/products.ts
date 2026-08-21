@@ -94,18 +94,20 @@ export const PRODUCTS: Product[] = [
     subtitle: "A Simple Guide to Rebuilding Motivation, Confidence, and Direction",
     category: "mindset",
     price: 19,
-    formats: ["Ebook (PDF + EPUB)"],
+    formats: ["Ebook (PDF + EPUB)", "Audiobook (MP3)"],
     blurb:
       "For anyone who feels stalled: how shame and paralysis actually work, and the small, doable steps that get you moving again.",
     description: [
       "Stuck No More is for the season where everything feels heavy and nothing feels possible. It takes the mechanics of feeling stuck — shame, paralysis, lost direction — and breaks them into pieces small enough to actually deal with.",
       "It covers rebuilding habits without self-punishment, finding purpose without a lightning-bolt moment, and treating yourself like someone worth helping. No toxic positivity, no 5 AM cold plunges required.",
+      "The full audiobook edition is now included with every copy — read it, listen to it, or both.",
     ],
     bullets: [
       "The longest, most personal book in the catalog (~37,000 words)",
       "Why motivation follows action — and how to start when you can't start",
       "Self-compassion that isn't self-indulgence",
       "Ends with a plan, not a pep talk",
+      "Full audiobook edition included free",
     ],
   },
   {
@@ -249,7 +251,7 @@ export const PRODUCTS: Product[] = [
     category: "stack",
     price: 29,
     compareAt: 38,
-    formats: ["2 ebooks"],
+    formats: ["2 ebooks + 2 audiobooks"],
     includes: ["stuck-no-more", "the-digital-tapestry"],
     blurb:
       "Stuck No More to get you moving, The Digital Tapestry to take your brain back from the feed.",
@@ -259,7 +261,7 @@ export const PRODUCTS: Product[] = [
     bullets: [
       "Stuck No More (~37,000 words of practical self-help)",
       "The Digital Tapestry (9 chapters on reclaiming your attention)",
-      "Digital Tapestry audiobook now included",
+      "Both audiobooks now included — Stuck No More and The Digital Tapestry",
     ],
   },
   {
@@ -291,7 +293,7 @@ export const PRODUCTS: Product[] = [
     category: "stack",
     price: 79,
     compareAt: 126,
-    formats: ["6 books + workbooks + 2 audiobooks"],
+    formats: ["6 books + workbooks + 3 audiobooks"],
     badge: "The whole stack",
     includes: [
       "complete-business-mastery",
