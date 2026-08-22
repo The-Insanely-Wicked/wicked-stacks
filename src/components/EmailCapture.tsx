@@ -29,10 +29,11 @@ export default function EmailCapture() {
   return (
     <section className="email-capture">
       <div className="wrap">
-        <h2>Join the list</h2>
+        <h2>Get the free Video Marketing Quickstart</h2>
         <p>
-          New releases, early access, and subscriber-only Stack deals — sent
-          when there's something worth sending. No spam, unsubscribe anytime.
+          Join the list and get our free guide to making marketing videos with
+          AI — plus early access and subscriber-only Stack deals. No spam,
+          unsubscribe anytime.
         </p>
         {!SITE.emailFormAction ? (
           <a

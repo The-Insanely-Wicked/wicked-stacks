@@ -29,6 +29,14 @@ const HOUSE_ADS: HouseAd[] = [
     coverTitle: 'COMPLETE', coverSub: 'Business Mastery', coverFrom: '#f5a623', coverTo: '#92400e', kind: 'book',
   },
   {
+    eyebrow: 'Software · one-time price',
+    title: 'DoodleAI',
+    body: 'Paste a script, get a professional whiteboard doodle video in minutes. 300+ templates, 160+ voices, no subscription. $97 once.',
+    cta: 'Watch it draw →',
+    url: 'https://doodleai.app',
+    coverTitle: 'DOODLE', coverSub: 'AI', coverFrom: '#0ea5e9', coverTo: '#1e3a8a', kind: 'app',
+  },
+  {
     eyebrow: 'Audio series',
     title: 'Your Shit Stinks Too',
     body: 'Two hours of deep-dives on hypocrisy, bias, and the high horse nobody gets to ride. $12, price locked — every new episode free.',

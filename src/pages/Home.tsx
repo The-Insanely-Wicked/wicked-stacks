@@ -73,6 +73,21 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section doodle-promo">
+        <div className="wrap">
+          <h2>We make our videos with DoodleAI</h2>
+          <p>
+            Every explainer video on this site was made with{" "}
+            <strong>DoodleAI</strong> — our AI-powered doodle video studio.
+            Turn any script into a whiteboard video in minutes, in 60+
+            languages.
+          </p>
+          <a className="ghost-btn" href={SITE.doodleUrl}>
+            Check out DoodleAI →
+          </a>
+        </div>
+      </section>
+
       <EmailCapture />
     </>
   );

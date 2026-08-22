@@ -169,7 +169,7 @@
     <div class="wrap">
       <a class="brand" href="/" aria-label="DoodleAI home"><img src="logo-wordmark.png" alt="DoodleAI" style="height:46px;display:block"></a>
       <a href="/blog/" style="font-weight:600;text-decoration:none;color:var(--ink)">Blog</a>
-      <a class="cta-small" href="#pricing">What it does</a>
+      <a class="cta-small" href="#pricing">Get DoodleAI</a>
     </div>
   </nav>
 
@@ -177,15 +177,19 @@
     <div class="wrap">
       <h1>Doodle videos, <span class="scribble">drawn by AI</span>, done in minutes</h1>
       <p class="sub">Paste your script. DoodleAI reads it, picks the right doodles, draws the scenes, and adds a natural voiceover — a professional whiteboard video without touching a design tool.</p>
-      <p class="cta-note" style="font-size:1.05rem"><strong>DoodleAI isn't for sale right now.</strong> The demo below shows what it does; email
-      <a href="mailto:sales@theinsanelywicked.com">sales@theinsanelywicked.com</a> if you want to be told when that changes.</p>
+      <!-- TODO: replace href with Stripe Payment Link / checkout URL -->
+      <a class="cta-btn" href="https://buy.stripe.com/aFaaEX0m1fBh3VneS9cQU09">Start making videos →</a>
+      <span class="cta-note">No design skills. No editing timeline anxiety. 30-day money-back guarantee.</span>
       <div class="video-frame">
         <iframe src="https://www.youtube.com/embed/EIJTN-QCmE4" title="DoodleAI demo video"
           style="width:100%;height:100%;border:0;border-radius:13px"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-
+      <div style="text-align:center;margin-top:26px">
+        <a class="cta-btn" href="https://buy.stripe.com/aFaaEX0m1fBh3VneS9cQU09">Get DoodleAI now →</a>
+        <span class="cta-note">One-time price · code SAVE25 takes $25 off at checkout</span>
+      </div>
     </div>
   </header>
 
@@ -266,7 +270,8 @@
              promo-effective floor exactly — never go below $49. Create
              both codes in Stripe and enable "allow promotion codes" on
              the Payment Link. -->
-                <p class="price"><s class="strike">$97</s> $72</p>
+        <p class="promo-strip">🎉 Launch special: use code <strong>SAVE25</strong> at checkout for <strong>$25 off</strong></p>
+        <p class="price"><s class="strike">$97</s> $72</p>
         <p class="per">one-time with code SAVE25 · unlimited videos</p>
         <ul>
           <li>Unlimited doodle videos in full HD</li>
@@ -276,7 +281,8 @@
           <li>Commercial license — sell videos to clients</li>
           <li>Training videos in your member area</li>
         </ul>
-        <span class="cta-note">Not currently for sale — <a href="mailto:sales@theinsanelywicked.com">ask to be notified</a></span>
+        <a class="cta-btn" href="https://buy.stripe.com/aFaaEX0m1fBh3VneS9cQU09">Get DoodleAI now</a>
+        <span class="cta-note">Secure checkout · 30-day money-back guarantee</span>
       </div>
     </div>
   </section>
@@ -315,5 +321,34 @@
     </div>
   </footer>
 
+  <!-- Exit-intent offer: fires once per session when the cursor leaves the
+       top of the viewport. DOODLE48 = $48 off → $49 (matches the
+       DoodleMaker promo-effective floor; never go lower). -->
+  <div class="exit-overlay" id="exit-overlay" role="dialog" aria-modal="true" aria-labelledby="exit-title">
+    <div class="exit-modal">
+      <button class="exit-close" id="exit-close" aria-label="Close">×</button>
+      <h2 id="exit-title">Wait — grab the best deal we've got</h2>
+      <p>Before you go: this code knocks DoodleAI down to <strong>$49</strong> — the lowest we offer, period.</p>
+      <p class="exit-code">DOODLE48</p><br />
+      <a class="cta-btn" href="#pricing" id="exit-cta">Use my code →</a>
+      <p class="exit-fine">One use per customer. Enter it at checkout.</p>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var KEY = "doodleai-exit-seen";
+      var overlay = document.getElementById("exit-overlay");
+      function close() { overlay.classList.remove("open"); }
+      document.getElementById("exit-close").addEventListener("click", close);
+      document.getElementById("exit-cta").addEventListener("click", close);
+      overlay.addEventListener("click", function (e) { if (e.target === overlay) close(); });
+      document.addEventListener("mouseout", function (e) {
+        if (e.clientY <= 0 && !sessionStorage.getItem(KEY)) {
+          sessionStorage.setItem(KEY, "1");
+          overlay.classList.add("open");
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
