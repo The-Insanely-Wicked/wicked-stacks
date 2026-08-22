@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DoodleAI Blog</title>
+    <link>https://doodleai.app/blog/</link>
+    <description>Practical guides to making whiteboard and explainer videos without a design tool.</description>
+    <language>en-us</language>
+    <atom:link href="https://doodleai.app/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doodle Video Scripts That Sell: The 60-Second Formula</title>
+      <link>https://doodleai.app/blog/doodle-video-scripts-that-sell.html</link>
+      <guid isPermaLink="true">https://doodleai.app/blog/doodle-video-scripts-that-sell.html</guid>
+      <pubDate>Thu, 21 Aug 2026 11:00:00 GMT</pubDate>
+      <description>The exact six-beat script structure for doodle videos that convert — with timing, word counts, and the mistakes that kill retention.</description>
+    </item>
+    <item>
+      <title>The No-Actor, No-Camera Explainer Video for Small Business</title>
+      <link>https://doodleai.app/blog/explainer-video-for-small-business.html</link>
+      <guid isPermaLink="true">https://doodleai.app/blog/explainer-video-for-small-business.html</guid>
+      <pubDate>Thu, 21 Aug 2026 10:00:00 GMT</pubDate>
+      <description>Small businesses need explainer videos and can't pay agency prices. Here's how doodle videos solve it — what to say, what it costs, and the mistakes to skip.</description>
+    </item>
+    <item>
+      <title>How to Make a Whiteboard Video (Without Drawing a Single Line)</title>
+      <link>https://doodleai.app/blog/how-to-make-a-whiteboard-video.html</link>
+      <guid isPermaLink="true">https://doodleai.app/blog/how-to-make-a-whiteboard-video.html</guid>
+      <pubDate>Thu, 21 Aug 2026 09:00:00 GMT</pubDate>
+      <description>The complete beginner's path to a professional whiteboard video: script, voice, scenes — no drawing skills, no film crew, no subscription software.</description>
+    </item>
+  </channel>
+</rss>
