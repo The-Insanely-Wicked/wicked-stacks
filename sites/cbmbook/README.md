@@ -23,3 +23,11 @@ no build step.
 cbmbook.com is mid-transfer from GoDaddy to Porkbun (expected ~Aug 25).
 Until the transfer completes and DNS is reachable, this deploys to its
 Vercel URL only. Attach the custom domain after the transfer lands.
+
+## Restore checklist (after Aug 25)
+
+- Attach cbmbook.com in Vercel → Settings → Domains, using the A/CNAME
+  values Vercel shows, entered at Porkbun.
+- Restore the MensRead house ad in
+  `sites/mensread/src/components/AdSpace.tsx` — search for
+  "TEMPORARY 2026-08-22" and put the url back to `https://cbmbook.com`.

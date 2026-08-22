@@ -25,7 +25,10 @@ const HOUSE_ADS: HouseAd[] = [
     title: 'Complete Business Mastery',
     body: '17 chapters of real frameworks and real numbers, zero guru fluff — plus a full toolkit of templates and 2 hours of bonus audio deep-dives. $47.',
     cta: 'Build the machine →',
-    url: 'https://cbmbook.com',
+    // TEMPORARY 2026-08-22: cbmbook.com shows a GoDaddy parked page while the
+    // domain transfers to Porkbun. Point at the store so the ad still converts.
+    // Restore to 'https://cbmbook.com' once the domain is on Vercel (~Aug 25).
+    url: 'https://wickedstacks.com/p/complete-business-mastery',
     coverTitle: 'COMPLETE', coverSub: 'Business Mastery', coverFrom: '#f5a623', coverTo: '#92400e', kind: 'book',
   },
   {
