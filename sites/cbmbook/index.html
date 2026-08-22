@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complete Business Mastery — the book + the toolkit</title>
+  <meta name="description" content="Complete Business Mastery: the ultimate (and slightly sarcastic) guide to building, running, and growing any business. 17 chapters, real frameworks, plus a full Resource Pack of templates and scripts." />
+  <link rel="canonical" href="https://cbmbook.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cbmbook.com/" />
+  <meta property="og:title" content="Complete Business Mastery" />
+  <meta property="og:description" content="17 chapters of real frameworks, real numbers, and zero guru fluff — plus the Resource Pack toolkit." />
+  <meta name="theme-color" content="#0d0b14" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0d0b14; --bg-raised: #16121f; --bg-card: #1a1526;
+      --ink: #ece9f4; --ink-soft: #a49dbd; --line: #2b2440;
+      --cyan: #35c7ee; --purple: #8b5cf6; --coral: #f2545b; --amber: #f5a623;
+    }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      background: var(--bg); color: var(--ink);
+      font-family: "Inter", system-ui, sans-serif;
+      line-height: 1.7; font-size: 1.06rem;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    h1, h2, h3 { font-family: "Sora", system-ui, sans-serif; line-height: 1.15; text-wrap: balance; }
+    a { color: var(--cyan); }
+
+    .hero {
+      padding: 80px 0 60px; text-align: center;
+      background:
+        radial-gradient(70% 90% at 50% 0%, rgba(139, 92, 246, 0.25), transparent 65%),
+        radial-gradient(40% 60% at 85% 20%, rgba(53, 199, 238, 0.12), transparent 60%);
+    }
+    .eyebrow {
+      text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.78rem;
+      font-weight: 700; color: var(--amber); margin-bottom: 14px;
+    }
+    .hero h1 { font-size: clamp(2.4rem, 7vw, 3.8rem); font-weight: 800; }
+    .hero .sub {
+      font-size: 1.25rem; font-weight: 600; margin-top: 14px; color: var(--ink);
+    }
+    .hero .promise { color: var(--ink-soft); max-width: 40rem; margin: 14px auto 0; }
+    .cta-btn {
+      display: inline-block; background: var(--amber); color: #241800;
+      font-weight: 800; text-decoration: none; border-radius: 999px;
+      padding: 16px 34px; font-size: 1.1rem; margin-top: 28px;
+      font-family: "Sora", system-ui, sans-serif;
+    }
+    .cta-btn:hover { filter: brightness(1.08); }
+    .cta-note { display: block; color: var(--ink-soft); font-size: 0.9rem; margin-top: 10px; }
+
+    section { padding: 44px 0; }
+    section.alt { background: var(--bg-raised); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    h2 { font-size: 1.7rem; margin-bottom: 18px; }
+    p + p { margin-top: 14px; }
+    .muted { color: var(--ink-soft); }
+
+    .pull {
+      border-left: 4px solid var(--coral); background: var(--bg-card);
+      padding: 18px 22px; border-radius: 0 12px 12px 0; margin: 24px 0;
+      font-weight: 600; font-size: 1.12rem;
+    }
+
+    .parts { display: grid; gap: 14px; margin-top: 20px; }
+    .part {
+      background: var(--bg-card); border: 1px solid var(--line);
+      border-radius: 12px; padding: 18px 20px;
+    }
+    .part h3 { font-size: 1.05rem; margin-bottom: 6px; }
+    .part h3 span { color: var(--purple); margin-right: 8px; }
+    .part p { color: var(--ink-soft); font-size: 0.98rem; }
+
+    .checklist { list-style: none; margin-top: 16px; display: grid; gap: 10px; }
+    .checklist li { padding-left: 30px; position: relative; }
+    .checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--cyan); font-weight: 800; }
+
+    .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: 18px; }
+    .col-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+    .col-card.for { border-color: rgba(53, 199, 238, 0.5); }
+    .col-card.notfor { border-color: rgba(242, 84, 91, 0.5); }
+    .col-card h3 { margin-bottom: 10px; font-size: 1.05rem; }
+    .col-card ul { list-style: none; display: grid; gap: 8px; }
+    .col-card.for li::before { content: "→ "; color: var(--cyan); }
+    .col-card.notfor li::before { content: "✕ "; color: var(--coral); }
+
+    .price-box {
+      text-align: center; background: var(--bg-card);
+      border: 1px solid var(--purple); border-radius: 16px;
+      padding: 36px 28px; margin-top: 10px;
+    }
+    .price-box .price { font-size: 3rem; font-weight: 800; color: var(--amber); font-family: "Sora", system-ui, sans-serif; }
+    .price-box .strike { color: var(--ink-soft); text-decoration: line-through; font-size: 1.2rem; }
+    .price-box ul { list-style: none; margin: 18px auto; max-width: 26rem; text-align: left; display: grid; gap: 8px; }
+    .price-box li::before { content: "✓ "; color: var(--cyan); font-weight: 800; }
+
+    .faq { display: grid; gap: 8px; margin-top: 16px; }
+    details {
+      background: var(--bg-card); border: 1px solid var(--line);
+      border-radius: 10px; padding: 14px 18px;
+    }
+    summary { cursor: pointer; font-weight: 700; }
+    details p { margin-top: 10px; color: var(--ink-soft); }
+
+    .guarantee-box {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: var(--bg-card); border: 1px solid var(--line);
+      border-radius: 12px; padding: 20px; margin-top: 8px;
+    }
+    .guarantee-box .shield { font-size: 1.8rem; }
+
+    .exit-overlay { position: fixed; inset: 0; background: rgba(6, 4, 12, 0.75); display: none; align-items: center; justify-content: center; z-index: 100; padding: 20px; }
+    .exit-overlay.open { display: flex; }
+    .exit-modal { position: relative; background: var(--bg-card); border: 1px solid var(--amber); border-radius: 16px; padding: 34px 30px; max-width: 430px; text-align: center; }
+    .exit-modal h2 { margin-bottom: 10px; font-size: 1.4rem; }
+    .exit-modal p { color: var(--ink-soft); margin-bottom: 14px; }
+    .exit-code { font-family: "Sora", system-ui, sans-serif; font-weight: 800; font-size: 1.7rem; letter-spacing: 0.06em; color: var(--amber); background: var(--bg-raised); border: 1px dashed var(--amber); border-radius: 10px; padding: 10px 16px; display: inline-block; margin-bottom: 14px; }
+    .exit-close { position: absolute; top: 8px; right: 14px; background: none; border: none; color: var(--ink-soft); font-size: 1.7rem; cursor: pointer; line-height: 1; }
+    .exit-fine { font-size: 0.8rem; margin-top: 10px; color: var(--ink-soft); }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--ink-soft); font-size: 0.9rem; text-align: center; }
+    footer a { color: var(--ink-soft); }
+    a:focus-visible, .cta-btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">From The Insanely Wicked · 18 months in the making</p>
+      <h1>Complete Business Mastery</h1>
+      <p class="sub">The Ultimate (and Slightly Sarcastic) Guide to Building, Running, and Growing Any Business</p>
+      <p class="promise">17 chapters. Real frameworks. Real numbers. Zero guru fluff. Plus the Resource Pack — every template, script, and scorecard the book teaches you to use — and now 4 bonus audio deep-dives (~2 hours) included free.</p>
+      <!-- TODO: replace href with the Stripe Payment Link for CBM -->
+      <a class="cta-btn" href="https://buy.stripe.com/00w9AT4Ch0Gn77z25ncQU00">Get the book + toolkit — $47</a>
+      <span class="cta-note">Instant download · PDF + EPUB · 30-day money-back guarantee</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2>Let's cut the crap.</h2>
+      <p>Most business books are a motivational poster stretched to 200 pages. You finish them feeling great and knowing nothing: no numbers, no systems, no answer to "okay, but what do I actually <em>do</em> on Monday?"</p>
+      <p>Complete Business Mastery is the other kind of book. It assumes you're serious, it shows the math, and it tells you the parts nobody puts on Instagram — including the fact that you'll probably fail if you skip the boring fundamentals everyone skips.</p>
+      <div class="pull">The butcher always gets paid. The book explains why — and how to make sure you're the butcher.</div>
+      <p>It took a year and a half to write. Not because writing is slow, but because every chapter had to survive one test: <strong>would this have actually helped me when I was figuring it out the hard way?</strong> If a chapter was just motivation, it got cut.</p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>What's inside the book</h2>
+      <p class="muted">Seventeen chapters covering the whole life of a business — with parables, worked examples, and quick-reference frameworks throughout.</p>
+      <div class="parts">
+        <div class="part">
+          <h3><span>01–04</span>Foundations that aren't fluffy</h3>
+          <p>Mindset without the woo, unit economics, strategy, legal structure, and cash flow — the stuff that quietly decides whether you survive year one.</p>
+        </div>
+        <div class="part">
+          <h3><span>05–08</span>Knowing your market cold</h3>
+          <p>Market research that isn't a survey nobody answers: top-down, bottom-up, and value-theory market sizing, jobs-to-be-done, branding, and customer acquisition.</p>
+        </div>
+        <div class="part">
+          <h3><span>09–12</span>Sales &amp; operations that run</h3>
+          <p>Building a sales system (not just "hustling"), closing without being gross, operations, and the tech/automation chapter with actual ROI math in dollars.</p>
+        </div>
+        <div class="part">
+          <h3><span>13–17</span>People, scale, and the long game</h3>
+          <p>Hiring without getting burned, culture that isn't a ping-pong table, when to scale (and when not to), and playing for the decade, not the quarter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Then the Resource Pack turns it into action</h2>
+      <p>Reading is nice. Doing is better. The Resource Pack is the book's toolkit — every framework as a fill-in-the-blank template, cross-referenced to the chapter that explains it:</p>
+      <ul class="checklist">
+        <li><strong>Financial templates</strong> — unit economics, cash flow, pricing, and break-even worksheets</li>
+        <li><strong>Sales tools</strong> — cold email templates, call scripts, and objection-handling lines</li>
+        <li><strong>Hiring kit</strong> — role scorecards and 30-60-90 day plans (with a filled-in example)</li>
+        <li><strong>Operations</strong> — SOP templates and a metrics dashboard starter</li>
+        <li><strong>Go-to-market</strong> — launch planning checklists with the red flags marked</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Who this is for (and who it isn't)</h2>
+      <div class="two-col">
+        <div class="col-card for">
+          <h3>This is for you if…</h3>
+          <ul>
+            <li>You're starting or running a real business and want the whole picture</li>
+            <li>You'd rather see the math than another mindset meme</li>
+            <li>You can handle a book that occasionally calls you out</li>
+            <li>You want tools you'll still be using a year from now</li>
+          </ul>
+        </div>
+        <div class="col-card notfor">
+          <h3>Skip it if…</h3>
+          <ul>
+            <li>You want "passive income in 30 days" — that book is a scam, and it's not this one</li>
+            <li>You're allergic to spreadsheets on principle</li>
+            <li>You collect business books instead of using them (we've all been there)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="get">
+    <div class="wrap">
+      <h2 style="text-align:center">Get Complete Business Mastery</h2>
+      <div class="price-box">
+        <p><s class="strike">$64 bought separately</s></p>
+        <p class="price">$47</p>
+        <ul>
+          <li>Complete Business Mastery — 17 chapters, ~130 pages (PDF + EPUB)</li>
+          <li>The full Resource Pack — templates, scripts, scorecards (PDF)</li>
+          <li>NEW: 4 bonus audio deep-dives — ~2 hours of the book's hardest ideas argued out loud (M4A)</li>
+          <li>Instant download, read on any device</li>
+          <li>Free updates to this edition, forever</li>
+        </ul>
+        <a class="cta-btn" href="https://buy.stripe.com/00w9AT4Ch0Gn77z25ncQU00">Buy now — instant download</a>
+        <span class="cta-note">Secure checkout via Stripe · 30-day money-back guarantee</span>
+      </div>
+      <div class="guarantee-box">
+        <span class="shield">🛡️</span>
+        <p><strong>The no-weasel guarantee:</strong> read it for 30 days. If it didn't give you at least one framework you'll actually use, email us and you get your money back. No forms, no "exit interviews," no hard feelings.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Questions people actually ask</h2>
+      <div class="faq">
+        <details>
+          <summary>Is this for beginners?</summary>
+          <p>It works for beginners, but it doesn't baby you. If you're at absolute zero — no idea, no business — start with our beginner book, <em>From Zero to Online Income</em>, then graduate to this. If you're already building something, start here.</p>
+        </details>
+        <details>
+          <summary>How is this different from every other business book?</summary>
+          <p>Numbers and tools. Every claim comes with the math shown, and every framework comes as a template in the Resource Pack. Also, it's honest about failure instead of pretending positive thinking is a strategy.</p>
+        </details>
+        <details>
+          <summary>What formats do I get?</summary>
+          <p>PDF and EPUB for the book (reads on anything — phone, tablet, Kindle app, computer), PDF for the Resource Pack so the worksheets print cleanly.</p>
+        </details>
+        <details>
+          <summary>Physical copy?</summary>
+          <p>Digital only for now. A paperback edition is on the roadmap — buyers will get first crack at it.</p>
+        </details>
+        <details>
+          <summary>What if it's not for me?</summary>
+          <p>30 days, full refund, one email. We only want money from people the book actually helped.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 The Insanely Wicked · <a href="https://wickedstacks.com">More books at Wicked Stacks</a> · <a href="mailto:sales@theinsanelywicked.com">sales@theinsanelywicked.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Exit-intent offer: MASTERY10 = $10 off → $37. Create the code in
+       Stripe and enable "allow promotion codes" on the Payment Link. -->
+  <div class="exit-overlay" id="exit-overlay" role="dialog" aria-modal="true" aria-labelledby="exit-title">
+    <div class="exit-modal">
+      <button class="exit-close" id="exit-close" aria-label="Close">×</button>
+      <h2 id="exit-title">Before you go — take $10 off</h2>
+      <p>18 months of work for $37. That's the best deal this page will ever show you:</p>
+      <p class="exit-code">MASTERY10</p><br />
+      <a class="cta-btn" href="#get" id="exit-cta">Use my code →</a>
+      <p class="exit-fine">One use per customer. Enter it at checkout.</p>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var KEY = "cbm-exit-seen";
+      var overlay = document.getElementById("exit-overlay");
+      function close() { overlay.classList.remove("open"); }
+      document.getElementById("exit-close").addEventListener("click", close);
+      document.getElementById("exit-cta").addEventListener("click", close);
+      overlay.addEventListener("click", function (e) { if (e.target === overlay) close(); });
+      document.addEventListener("mouseout", function (e) {
+        if (e.clientY <= 0 && !sessionStorage.getItem(KEY)) {
+          sessionStorage.setItem(KEY, "1");
+          overlay.classList.add("open");
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
