@@ -13,11 +13,11 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <p className="footer-head">Make videos like ours</p>
+          <p className="footer-head">Video courses</p>
           <p className="footer-muted">
-            We turn scripts into whiteboard videos with{" "}
-            <a href={SITE.doodleUrl}>DoodleAI</a> — our own AI doodle-video
-            studio. See what it can do for your business.
+            Seventeen professionally produced courses on project management,
+            communication, focus, and career growth. Stream or download —
+            yours forever, no subscription.
           </p>
         </div>
         <div>

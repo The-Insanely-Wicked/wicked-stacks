@@ -142,16 +142,16 @@ export const PRODUCTS: Product[] = [
     slug: "tapestry-debates",
     buyUrl: "https://buy.stripe.com/3cIdR9gkZgFl3VnbFXcQU0b",
     title: "The Tapestry Debates",
-    subtitle: "Two AI-hosted debates on the big questions from The Digital Tapestry",
+    subtitle: "Two head-to-head debates on the big questions from The Digital Tapestry",
     category: "mindset",
     price: 7,
     formats: ["2 audio debates (M4A) · ~50 minutes"],
     blurb:
-      "Two lively AI-hosted debates that take the sharpest questions from The Digital Tapestry and argue both sides — smart, fast, and surprisingly fun to disagree with.",
+      "Two lively two-host debates that take the sharpest questions from The Digital Tapestry and argue both sides — smart, fast, and surprisingly fun to disagree with.",
     description: [
       "How Algorithms Hijack Your Brain: are recommendation feeds a tool you use, or a slot machine using you? Both sides get their best shot.",
       "Digital Connection or Psychological Trap?: is social media genuinely connecting us, or performing connection while collecting us? A real argument, not a lecture.",
-      "Made with AI debate hosts from the book's own research and ideas — a different way into the material, perfect for a commute. Read the book, then hear it argued.",
+      "Built entirely from the book's own research and ideas — a different way into the material, perfect for a commute. Read the book, then hear it argued.",
     ],
     bullets: [
       "Two full debates, ~25 minutes each",
@@ -173,7 +173,7 @@ export const PRODUCTS: Product[] = [
       "Nobody gets to ride the high horse — a growing collection of audio deep-dives on hypocrisy, bias, and the mess we're all standing in. Born as a podcast, starring Michael and his dog Frankie.",
     description: [
       "Your Shit Stinks Too started as a podcast with an unlikely duo: Michael and his dog Frankie, calling out the one thing humans hate admitting — everybody's shit stinks, including yours, including his.",
-      "This collection turns that story into AI-hosted deep-dive conversations that dig into the big uncomfortable stuff: The High Horse of Human Hypocrisy (~40 min), Why Our Brains Defend Systemic Inequality (~43 min), and Shared Fallibility and Systemic Racism (~38 min).",
+      "This collection turns that story into deep-dive conversations that dig into the big uncomfortable stuff: The High Horse of Human Hypocrisy (~40 min), Why Our Brains Defend Systemic Inequality (~43 min), and Shared Fallibility and Systemic Racism (~38 min).",
       "It's a living collection — new episodes get added as they're made, and every buyer gets them emailed free. The price climbs as episodes are added: buy now and lock in every future episode at today's price.",
     ],
     bullets: [
