@@ -188,7 +188,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "your-shit-stinks-too",
-    buyUrl: "https://buy.stripe.com/eVq14n0m10GneA1h0hcQU0g",
+    buyUrl: "https://buy.stripe.com/4gM3cv1q54WD77zaBTcQU0p",
     title: "Your Shit Stinks Too",
     subtitle: "The Audio Collection",
     category: "mindset",
