@@ -94,12 +94,32 @@ const postBySlug = Object.fromEntries(POSTS.map((p) => [p.slug, p]));
 /** Schema type that matches what the thing actually is. */
 function productSchema(p) {
   const url = `${SITE_URL}/p/${p.slug}`;
+  // Search Console flags a missing `image` as critical for Merchant listings,
+  // and `sku` answers "no global identifier provided" — these are digital
+  // products, so there is no GTIN to give.
+  //
+  // Deliberately absent: aggregateRating and review. Search Console lists both
+  // as missing, but we have no real customer reviews, and inventing them is
+  // structured-data spam. They go in when there is something true to put there.
+  const image = p.image ? `${SITE_URL}${p.image}` : undefined;
   const offer = {
     "@type": "Offer",
     price: String(p.price),
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
     url,
+    // The 30-day guarantee stated in the footer and on every product page.
+    // returnMethod and applicableCountry are deliberately omitted rather than
+    // guessed: there is nothing to mail back, and the guarantee is not limited
+    // to one country.
+    hasMerchantReturnPolicy: {
+      "@type": "MerchantReturnPolicy",
+      returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+      merchantReturnDays: 30,
+      returnFees: "https://schema.org/FreeReturn",
+    },
+    // shippingDetails is intentionally absent. These are instant downloads;
+    // declaring a shipping rate would describe a delivery that does not happen.
   };
   if (p.category === "courses") {
     return {
@@ -107,6 +127,8 @@ function productSchema(p) {
       "@type": "Course",
       name: p.title,
       description: p.blurb,
+      image,
+      sku: p.slug,
       url,
       provider: { "@type": "Organization", name: "Wicked Stacks", url: SITE_URL },
       offers: offer,
@@ -119,6 +141,8 @@ function productSchema(p) {
       name: p.title,
       description: p.blurb,
       url,
+      image,
+      sku: p.slug,
       brand: { "@type": "Brand", name: "Wicked Stacks" },
       offers: offer,
     };
@@ -129,6 +153,8 @@ function productSchema(p) {
     name: p.title,
     description: p.blurb,
     url,
+    image,
+    sku: p.slug,
     bookFormat: "https://schema.org/EBook",
     author: { "@type": "Person", name: "Michael Gardner" },
     offers: offer,
@@ -142,6 +168,7 @@ function meta(route) {
       title: `${p.title} — ${p.subtitle} | Wicked Stacks`,
       description: p.blurb,
       ogType: "product",
+      image: p.image ? `${SITE_URL}${p.image}` : undefined,
       jsonLd: productSchema(p),
     };
   }
@@ -289,6 +316,22 @@ for (const route of rendered) {
   // Canonical and og:url are per-page on every route, home included — this is
   // the tag that was telling Google the whole catalog was one page.
   html = setTag(html, /<link rel="canonical"[\s\S]*?\/>/, `<link rel="canonical" href="${canonical}" />`);
+
+  // Product routes get their own cover as the social image. Without this every
+  // shared link — 18 different products — previewed with the same generic
+  // Facebook cover, which is what index.html carries as the default.
+  if (m.image) {
+    html = setTag(
+      html,
+      /<meta\s+property="og:image"[\s\S]*?\/>/,
+      `<meta property="og:image" content="${esc(m.image)}" />`,
+    );
+    html = setTag(
+      html,
+      /<meta\s+name="twitter:image"[\s\S]*?\/>/,
+      `<meta name="twitter:image" content="${esc(m.image)}" />`,
+    );
+  }
   html = setTag(
     html,
     /<meta\s+property="og:url"[\s\S]*?\/>/,
