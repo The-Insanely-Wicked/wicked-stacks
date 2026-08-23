@@ -269,7 +269,41 @@ const AppLayout: React.FC = () => {
     });
 
     const paragraphs = processedContent.split('\n\n').filter(p => p.trim());
-    
+
+    // A paragraph is split into affiliate links, markdown links, and plain
+    // text. Article copy is written in this repo, but the http(s) test still
+    // stands so a stray javascript: URL can never become an anchor.
+    const renderInline = (paragraph: string) => {
+      const parts = paragraph.split(/(<amazon-link[^>]+><\/amazon-link>|\[[^\]]+\]\([^)\s]+\))/);
+      return parts.filter(Boolean).map((part, i) => {
+        const amazon = part.match(/name="([^"]+)" keyword="([^"]+)"/);
+        if (amazon) {
+          return (
+            <AmazonProductLink key={i} productName={amazon[1]} keyword={amazon[2]}>
+              {amazon[1]}
+            </AmazonProductLink>
+          );
+        }
+
+        const link = part.match(/^\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)$/);
+        if (link) {
+          return (
+            <a
+              key={i}
+              href={link[2]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-rose-600 underline underline-offset-2 hover:text-rose-700"
+            >
+              {link[1]}
+            </a>
+          );
+        }
+
+        return <span key={i}>{part}</span>;
+      });
+    };
+
     return paragraphs.map((paragraph, index) => {
       if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
         return (
@@ -279,28 +313,9 @@ const AppLayout: React.FC = () => {
         );
       }
 
-      if (paragraph.includes('<amazon-link')) {
-        const parts = paragraph.split(/(<amazon-link[^>]+><\/amazon-link>)/);
-        return (
-          <p key={index} className="text-stone-700 leading-relaxed mb-4">
-            {parts.map((part, i) => {
-              const match = part.match(/name="([^"]+)" keyword="([^"]+)"/);
-              if (match) {
-                return (
-                  <AmazonProductLink key={i} productName={match[1]} keyword={match[2]}>
-                    {match[1]}
-                  </AmazonProductLink>
-                );
-              }
-              return <span key={i}>{part}</span>;
-            })}
-          </p>
-        );
-      }
-
       return (
         <p key={index} className="text-stone-700 leading-relaxed mb-4">
-          {paragraph}
+          {renderInline(paragraph)}
         </p>
       );
     });
