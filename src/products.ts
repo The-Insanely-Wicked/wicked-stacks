@@ -142,8 +142,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "the-overwhelm-detox",
-    // buyUrl pending — create the Stripe Payment Link, paste it here, and the
-    // button switches from "Coming soon" to a real checkout on the next deploy.
+    buyUrl: "https://buy.stripe.com/cNi3cv1q588PajL39rcQU0q",
     title: "The Overwhelm Detox",
     subtitle: "Reclaim Your Time, Attention, and Peace from Digital Burnout",
     category: "mindset",
