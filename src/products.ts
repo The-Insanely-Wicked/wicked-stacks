@@ -139,6 +139,30 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
+    slug: "the-overwhelm-detox",
+    // buyUrl pending — create the Stripe Payment Link, paste it here, and the
+    // button switches from "Coming soon" to a real checkout on the next deploy.
+    title: "The Overwhelm Detox",
+    subtitle: "Reclaim Your Time, Attention, and Peace from Digital Burnout",
+    category: "mindset",
+    price: 19,
+    formats: ["Ebook (PDF)"],
+    blurb:
+      "A funny, unsparing eleven-chapter plan for getting your attention back from your phone — notifications, boundaries, focus, and the inner critic that shows up when you finally sit still.",
+    description: [
+      "If your average Tuesday feels less like a ship sailing smoothly and more like patching seventeen leaks on a rubber dinghy during a hurricane, this one is for you. The Overwhelm Detox is about the specific modern exhaustion that comes from a device engineered to interrupt you, and it treats that as a design problem rather than a personal failing.",
+      "It starts by working out what the overwhelm is actually costing you, then gets specific: silencing the notification machine, setting boundaries that survive contact with other people, rebuilding a focus muscle that has not been used in a while, designing rooms and screens that leave you alone, and handling the inner critic that gets loud the moment things go quiet.",
+      "Eleven chapters, roughly 22,000 words, written by someone who is clearly enjoying himself. Nobody is asked to delete their accounts, move to a cabin, or feel guilty about liking the internet.",
+    ],
+    bullets: [
+      "11 chapters on notifications, boundaries, focus, environment and the inner critic",
+      "Work out your own flavour of overwhelm before trying to fix it",
+      "Boundaries that hold up when your boss messages at 4:53pm",
+      "Sustainable strategies, not a 30-day digital fast you will abandon",
+      "Funny throughout, which is the only way anyone finishes a book like this",
+    ],
+  },
+  {
     slug: "tapestry-debates",
     buyUrl: "https://buy.stripe.com/3cIdR9gkZgFl3VnbFXcQU0b",
     title: "The Tapestry Debates",

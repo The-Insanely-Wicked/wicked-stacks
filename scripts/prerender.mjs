@@ -186,6 +186,24 @@ function meta(route) {
       },
     };
   }
+  if (route.kind === "home") {
+    // The catalog list used to be hand-maintained in index.html and had
+    // silently fallen three products behind. Generated from PRODUCTS it
+    // cannot drift again.
+    return {
+      title: null,
+      jsonLd: {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: "Wicked Stacks catalog",
+        itemListElement: PRODUCTS.map((p, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          item: productSchema(p),
+        })),
+      },
+    };
+  }
   if (route.kind === "blogIndex") {
     return {
       title: "The Wicked Blog — Wicked Stacks",
@@ -200,7 +218,7 @@ function meta(route) {
       },
     };
   }
-  return null; // home keeps the head it already has
+  return null;
 }
 
 /* ------------------------------------------------------------------ */
@@ -225,7 +243,9 @@ for (const route of rendered) {
 
   let html = template;
 
-  if (m) {
+  // The homepage's own title and description are already right in
+  // index.html; it only needs the generated catalog list appended.
+  if (m?.title) {
     html = setTag(html, /<title>[\s\S]*?<\/title>/, `<title>${esc(m.title)}</title>`);
     html = setTag(
       html,
@@ -257,6 +277,9 @@ for (const route of rendered) {
       /<meta\s+name="twitter:description"[\s\S]*?\/>/,
       `<meta name="twitter:description" content="${esc(m.description)}" />`,
     );
+  }
+
+  if (m?.jsonLd) {
     html = html.replace(
       "</head>",
       `  <script type="application/ld+json">${JSON.stringify(m.jsonLd)}</script>\n  </head>`,
@@ -280,8 +303,31 @@ for (const route of rendered) {
   written++;
 }
 
+/* ------------------------------------------------------------------ */
+/* Sitemap                                                             */
+/* ------------------------------------------------------------------ */
+
+// Also generated rather than hand-kept, for the same reason as the catalog
+// list: a sitemap maintained by memory is a sitemap that quietly stops
+// listing new products.
+const priority = (kind) =>
+  kind === "home" ? "1.0" : kind === "product" ? "0.9" : kind === "post" ? "0.7" : "0.8";
+
+const urls = rendered
+  .map(
+    (r) =>
+      `  <url><loc>${r.url === "/" ? `${SITE_URL}/` : SITE_URL + r.url}</loc><priority>${priority(r.kind)}</priority></url>`,
+  )
+  .concat(`  <url><loc>${SITE_URL}/brand-kit.html</loc><priority>0.5</priority></url>`)
+  .join("\n");
+
+writeFileSync(
+  path.join(OUT, "sitemap.xml"),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`,
+);
+
 const home = readFileSync(path.join(OUT, "index.html"), "utf8");
 if (home.includes(MARKER)) throw new Error("prerender: homepage body was not filled");
 if (home.length < 20000) throw new Error(`prerender: homepage suspiciously small (${home.length})`);
 
-console.log(`prerender ok — ${written} routes written as real HTML`);
+console.log(`prerender ok — ${written} routes written as real HTML, sitemap regenerated`);
