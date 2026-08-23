@@ -123,21 +123,19 @@ export const PRODUCTS: Product[] = [
     subtitle: "Navigating Social Media, Influence, and the Future of Connection",
     category: "mindset",
     price: 19,
-    formats: ["Ebook (PDF)", "Audiobook (MP3)", "2 audio deep-dives (M4A)"],
+    formats: ["Ebook (PDF)", "Audiobook (MP3)"],
     blurb:
       "A sharp, funny deep-dive into what social media is actually doing to our brains, identities, and culture — and how to use it without being used.",
     description: [
       "From BBS boards to algorithmic feeds, The Digital Tapestry traces how we got here and what it's costing us: identity performance, influencer culture, the attention economy, misinformation, and the quiet rewiring of how we connect.",
       "Nine chapters plus case studies and reflection exercises, written by a slightly sarcastic, overly caffeinated guide who has read the research and refuses to be boring about it.",
       "The full audiobook edition is included with every copy — read it, listen to it, or both.",
-      "Two bonus audio deep-dives come with it as well — How Algorithms Hijack Your Brain and Digital Connection or Psychological Trap — the book's sharpest arguments talked out at length.",
     ],
     bullets: [
       "9 chapters + case studies + reflection prompts",
       "The real history of social media, minus the nostalgia filter",
       "How algorithms shape identity, culture, and what you buy",
       "Practical strategies for authentic engagement — or graceful exit",
-      "Full audiobook plus 2 bonus audio deep-dives, included",
     ],
   },
   {
