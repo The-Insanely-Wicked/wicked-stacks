@@ -803,5 +803,101 @@ Skin changes over time, and your routine should evolve accordingly. What works i
 
 Effective skincare is built on science, not marketing. By focusing on proven ingredients, using them correctly, and maintaining consistency, you can achieve real improvements in skin health and appearance. The luxury isn't in the packaging or the price—it's in the results.
 `
+  },
+  {
+    id: 26,
+    slug: 'two-minute-reset-sunday-scaries',
+    title: 'A 2-Minute Reset for the Sunday Scaries',
+    excerpt: 'That tightening in your chest around 5pm on Sunday has a shape and a cause. Here is a two-minute practice that interrupts it, and why short beats ambitious.',
+    category: 'Wellness & Mindfulness',
+    readTime: '6 min read',
+    author: 'Alexandra Reed',
+    date: 'August 23, 2026',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800',
+    seoKeywords: ['sunday scaries', 'sunday night anxiety', 'work anxiety relief', 'two minute reset', 'sunday evening routine'],
+    amazonProducts: [
+      { name: 'Pocket Notebook', keyword: 'small pocket notebook lined', context: 'A small pocket notebook' },
+      { name: 'Chamomile Tea', keyword: 'chamomile tea organic loose leaf', context: 'Chamomile tea' },
+      { name: 'Sunrise Alarm Clock', keyword: 'sunrise alarm clock wake up light', context: 'A sunrise alarm clock' }
+    ],
+    sources: [
+      'American Psychological Association - Stress in America survey series. apa.org',
+      'Harvard Health Publishing - guidance on relaxation techniques and breath control. health.harvard.edu',
+      'National Center for Complementary and Integrative Health - relaxation techniques for health. nccih.nih.gov',
+      'Mayo Clinic - stress management and relaxation techniques. mayoclinic.org'
+    ],
+    content: `
+It usually arrives around five in the afternoon. The light changes, the weekend stops feeling like a weekend, and something in your chest quietly tightens. You are not doing anything stressful. You might be folding laundry or watching something forgettable. And yet Monday has already walked into the room and sat down.
+
+The Sunday Scaries are common enough to be a punchline, which is a shame, because the punchline treats them as a personality quirk rather than what they actually are: anticipatory stress. Your nervous system is responding to a week that has not happened yet.
+
+**What is actually happening**
+
+Anticipatory stress is the body preparing for something ahead of time. It is the same machinery that makes your hands cold before a presentation, running on a longer timeline.
+
+The difficulty on a Sunday is that there is nothing to respond to. On Wednesday, the pressure has somewhere to go - you answer the email, you handle the meeting, you finish the thing. On Sunday evening, your body is braced and there is no action available. So the feeling loops.
+
+Most of us then do one of two things. We distract ourselves, which works until roughly 10pm. Or we try to get ahead of it - opening the laptop, scanning the inbox, doing a bit of Monday early. That second one feels productive and is usually the worst option available. It confirms to your body that the threat is real enough to warrant a response, and it turns a Sunday evening into a short, low-quality workday.
+
+There is a third option, and it takes about two minutes.
+
+**The two-minute reset**
+
+Do this once, on Sunday evening, ideally before dinner rather than at bedtime.
+
+Start with your breathing, because it is the fastest lever you have. Breathe in through your nose, then take a second, smaller sip of air on top of it - a double inhale, the way a child breathes after crying. Then let it out slowly through your mouth, longer than the breath in. Do that five times. That is roughly forty seconds.
+
+The long exhale is the part that matters. Extending the out-breath relative to the in-breath is one of the few reliably fast ways to signal to your nervous system that the emergency has passed. It is not a belief system. It is plumbing.
+
+Then, for the next minute, write down every Monday-shaped thing in your head. Not a to-do list. A dump. Half sentences are fine. The meeting you are dreading, the message you have not answered, the thing you said you would do in February. Keep a [AMAZON: Pocket Notebook] somewhere you will actually reach for, because doing this on your phone means being on your phone, and your phone has other plans for you.
+
+Then read the list back and mark exactly one item - the one that will feel best to have handled by Monday lunchtime. Circle it. Close the notebook.
+
+That is the whole practice. Five breaths, one brain dump, one circle.
+
+**Why the circle is the important part**
+
+The list on its own can make things worse. Seeing eleven items and no plan is just a more organized version of dread.
+
+Circling one thing does something specific: it converts an undefined threat into a defined task. Your nervous system responds very differently to those two categories. An undefined threat has no end and no size, so the body stays braced. A defined task has a shape, and once something has a shape you can put it down until you need it.
+
+You are not solving Monday. You are giving your body evidence that Monday is a known quantity with an entry point. That is usually enough to release the brace.
+
+**Why two minutes and not twenty**
+
+Because you will actually do two minutes.
+
+The advice usually offered for Sunday anxiety is a full evening routine - the bath, the journaling, the meditation, the no-screens rule, the herbal tea. All of it is good, and almost nobody sustains it, because it asks for a version of you with more time than you have. Then the failure to keep the routine becomes one more thing to feel bad about.
+
+A two-minute practice survives a bad week. It survives having people in the house, an unexpected dinner, a Sunday that got away from you. It works precisely because it asks for almost nothing, which means it is still there in November.
+
+If you want the fuller version on the Sundays you have room for, [AMAZON: Chamomile Tea] and an actual bath are genuinely pleasant and genuinely help. But treat those as a bonus, not the practice. The practice is two minutes long, and the two minutes are the part that has to be non-negotiable.
+
+**Making Monday less of an ambush**
+
+Two small changes outside the reset itself do a surprising amount of work.
+
+The first is deciding on Sunday what Monday morning looks like before you open anything. What you will wear, what you will eat, and what the circled task is. Decisions made in advance cost far less than decisions made at 7am while already behind.
+
+The second is how you wake up. Being pulled out of sleep by an alarm in a dark room is a rough entry into a day you were already dreading. [AMAZON: Sunrise Alarm Clock] brightens gradually before the alarm sounds, so the waking is a fade rather than a jolt. It is a small mechanical fix for a specifically unpleasant thirty seconds, and in the darker months it is worth more than it sounds.
+
+**When it is more than the Sunday Scaries**
+
+This is worth saying plainly, because a two-minute breathing practice is not the answer to everything.
+
+If the dread is not confined to Sunday - if it is there on Tuesday afternoon and Thursday morning too, or if it is affecting your sleep most nights, your appetite, or your ability to enjoy things you used to enjoy - that is worth raising with a doctor or a therapist. Persistent anxiety is treatable and common, and the fact that you have a demanding job does not mean it is simply the cost of having one.
+
+There is also a version of this where the reset works fine and the real problem is the job. If Sunday evening has felt like this for two years, the most useful thing on that notebook page might not be a task at all.
+
+**The Sunday you are aiming for**
+
+Not a Sunday with no feeling in it. Anticipating the week is not a malfunction, and a certain amount of Sunday-evening seriousness is just what it feels like to have responsibilities you care about.
+
+What you are aiming for is a Sunday where the feeling arrives, gets acknowledged, gets a shape, and then lets go of you - instead of sitting on your chest until Monday takes over.
+
+Five breaths. One page. One circle. Then go and have your evening.
+
+If a two-minute check-in is something you would want most days rather than only on Sundays, [Coach Roger](https://coachroger.app) is a wellness app built around exactly that scale of thing - a short daily prompt, a mood check, a stress reset when you need one. Entirely optional, and the practice above works perfectly well with a notebook and nothing else.
+`
   }
 ];

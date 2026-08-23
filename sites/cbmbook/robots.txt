@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Answer engines are welcome. The wildcard above already permits them; these
+# are spelled out so the intent is explicit rather than inferred.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://cbmbook.com/sitemap.xml
