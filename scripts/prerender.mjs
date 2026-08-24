@@ -187,10 +187,21 @@ function meta(route) {
         "@type": "CollectionPage",
         name: label,
         url: `${SITE_URL}/c/${route.slug}`,
+        // Each entry needs one of offers/review/aggregateRating or Search
+        // Console rejects it. We have real prices, so offers is the honest
+        // answer — there are no reviews to cite.
         hasPart: items.map((p) => ({
           "@type": "Product",
           name: p.title,
           url: `${SITE_URL}/p/${p.slug}`,
+          image: p.image ? `${SITE_URL}${p.image}` : undefined,
+          offers: {
+            "@type": "Offer",
+            price: String(p.price),
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/p/${p.slug}`,
+          },
         })),
       },
     };
