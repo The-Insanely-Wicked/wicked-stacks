@@ -126,6 +126,36 @@ export const POSTS: Post[] = [
     productSlug: "your-shit-stinks-too",
     videoUrl: "https://youtu.be/cyz0DfuaF0k",
   },
+  {
+    slug: "when-a-kid-says-i-cant-do-it",
+    title: "When a Kid Says \"I Can't Do It\"",
+    date: "2026-08-24",
+    category: "Kids' Corner",
+    excerpt:
+      "It's almost never about the thing they're looking at. It's about the size of it — and size is the one part you can actually fix.",
+    body: [
+      "A kid stares at a jigsaw puzzle, a messy bedroom, or a page of homework, and out it comes: I can't do it. Said flatly, like a fact about the world. And the reflex — every parent has it — is to argue. Yes you can. It's easy. You did one just like it last week.",
+      "That argument has never worked in the history of children, and there's a reason. You're disagreeing with the wrong sentence.",
+      "## They're not describing ability. They're describing size.",
+      "What a kid means by \"I can't do it\" is almost never a verdict on their own competence. It's a description of what's in front of them. The thing looks big. It has no edges they can find. There's no obvious place to put a hand.",
+      "Adults get this feeling too — we just have politer words for it. We say a project is overwhelming, or that we don't know where to start, or we quietly do something else for three days. Nobody thinks less of us for it. A seven-year-old says the shorter version and gets told they're being difficult.",
+      "So arguing about whether they *can* misses it entirely. They're not wrong about being stuck. They're wrong about why.",
+      "## The only useful question",
+      "Instead of \"yes you can,\" try: what's the very first small piece?",
+      "Not the plan. Not the whole approach. One piece, small enough to be boring. For the puzzle: find all the flat edges. For the bedroom: everything that's a book goes on the bed. For the homework: read just the first question out loud, don't answer it yet.",
+      "What happens next is the part worth watching. The kid does the boring small thing — and the big thing quietly gets smaller. Not because you gave a speech about perseverance, but because it now has an edge they can hold onto.",
+      "Do that four or five times and something better than a tidy bedroom happens: they start doing it without you. You've handed over a move they can make on their own, which is the whole job.",
+      "## Don't take the pencil",
+      "The hard part isn't the technique. It's sitting on your hands.",
+      "When a kid is stuck and you're tired, doing it yourself takes ninety seconds and doing it their way takes twenty minutes. Every parent has made that trade, and sometimes it's the right one — dinner is burning, you have to leave, fine.",
+      "But the twenty-minute version is where the learning is. If you always take the pencil, the lesson they get isn't \"puzzles are doable.\" It's \"when things get hard, someone else finishes them.\" That one is expensive later.",
+      "## Say the word out loud",
+      "One small addition that costs nothing: name it while it's happening. \"That was a big problem, so you made it into small ones.\"",
+      "Kids can do a thing long before they can describe it, and the describing is what makes it portable. A kid who can say what they did to the puzzle has a chance of doing it to a school project in four years. A kid who just got a tidy room has a tidy room.",
+      "That's the whole idea behind Princess Penny's Problem-Solving Party — a big problem shows up, everybody panics for a page, and then Penny does the unglamorous thing and cuts it into pieces small enough to carry. It's a story rather than a lesson, which is the only way this goes down at bedtime. Read it a few times and the phrase starts coming out of them instead of you.",
+    ],
+    productSlug: "princess-pennys-problem-solving-party",
+  },
 ];
 
 export const postBySlug = (slug: string) => POSTS.find((p) => p.slug === slug);

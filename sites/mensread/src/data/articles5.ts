@@ -1473,4 +1473,96 @@ Build your library intentionally. Read actively. Apply what you learn. The compo
 
 Your intellectual foundation awaits construction. Start reading.`
   }
+  ,{
+    id: '26',
+    title: 'Sleep Like It Matters: A Practical Guide for Men Who Are Always Tired',
+    slug: 'sleep-guide-for-men-who-are-always-tired',
+    category: 'wellness',
+    excerpt: 'You have optimised your training, your desk, and your coffee. If you are still tired, the problem is almost certainly the seven hours you have been treating as flexible.',
+    author: 'Dr. Marcus Webb',
+    publishDate: 'August 24, 2026',
+    readTime: 9,
+    image: '',
+    keywords: ['sleep', 'sleep hygiene', 'insomnia', 'recovery', 'blackout curtains', 'white noise machine', 'sleep quality', 'wellness'],
+    metaDescription: 'A practical sleep guide for men: what actually improves sleep quality, what is marketing, and the small environmental fixes that make the biggest difference.',
+    sources: [
+      'Centers for Disease Control and Prevention - Sleep and Sleep Disorders guidance',
+      'American Academy of Sleep Medicine - recommended sleep duration for adults',
+      'Mayo Clinic - insomnia and sleep hygiene guidance',
+      'National Institutes of Health - circadian rhythms and light exposure',
+      'Sleep Foundation - bedroom environment and temperature guidance'
+    ],
+    productLinks: [
+      { name: 'Blackout Curtains', keyword: 'blackout curtains bedroom', amazonUrl: 'https://www.amazon.com/s?k=blackout+curtains+bedroom', position: 12 },
+      { name: 'White Noise Machine', keyword: 'white noise machine sleep', amazonUrl: 'https://www.amazon.com/s?k=white+noise+machine+sleep', position: 18 },
+      { name: 'Cooling Mattress Topper', keyword: 'cooling mattress topper', amazonUrl: 'https://www.amazon.com/s?k=cooling+mattress+topper', position: 24 }
+    ],
+    content: `
+Most men treat sleep as the thing that gets cut. Training gets a plan. Work gets a calendar. Diet gets tracked. Sleep gets whatever is left over after the last episode, and then gets blamed for nothing in particular when the whole week feels like wading through wet sand.
+
+The uncomfortable truth is that sleep is not the recovery you do after the important things. For strength, concentration, mood and appetite control, it is closer to the foundation the important things sit on.
+
+Adults need seven or more hours a night. That figure comes from the CDC and the American Academy of Sleep Medicine, and it is not a stretch goal for the unusually virtuous - it is the ordinary requirement.
+
+## Start with the two things that actually move the needle
+
+Most sleep advice is a list of twenty items, which guarantees you will do none of them. Two matter far more than the rest.
+
+**A consistent wake time.** Not bedtime - wake time. Your body clock anchors to when light hits your eyes, and a steady morning does more for sleep quality than almost anything you can do at night. This includes weekends, which is the part nobody wants to hear. A Saturday lie-in until eleven is a small dose of jet lag you then carry into Monday.
+
+**Light in the morning, less of it at night.** Ten minutes outdoors shortly after waking is a genuinely effective, entirely free intervention. In the evening, the goal is not blackout conditions at 7pm - it is simply not sitting under bright overheads until the moment you get into bed.
+
+Get those two right for a fortnight before you buy anything. A lot of people discover they did not have a sleep problem so much as a schedule problem.
+
+## Then fix the room
+
+Once the timing is steady, the bedroom itself is where the remaining gains are. This is also where money is genuinely worth spending, because these are one-time purchases that work every night without requiring discipline.
+
+**Dark.** Most bedrooms are considerably brighter than people think - streetlights, a neighbour's security lamp, the standby glow of four different devices. [PRODUCT:Blackout Curtains] deal with the largest source in one purchase, and the difference is usually obvious within a couple of nights. If you work shifts or your bedroom faces a road, this is the single highest-value thing on this page.
+
+**Quiet, or at least consistent.** Silence is not actually the target - unpredictable noise is the problem. A door, a car, a partner getting up at six. [PRODUCT:White Noise Machine] works by raising the floor so individual sounds do not spike above it. A fan does much the same job if you already own one.
+
+**Cool.** Sleep initiation depends partly on your core temperature dropping, and a warm room works against that. Somewhere in the mid-to-low sixties Fahrenheit suits most people. If you cannot control the room - shared thermostat, old building, summer - [PRODUCT:Cooling Mattress Topper] addresses the surface you are actually lying on, which is where most of the discomfort comes from.
+
+## What is mostly marketing
+
+Not everything sold as a sleep aid earns its place.
+
+**Sleep trackers** are useful for spotting a pattern over a month. They are much less useful checked every morning, where the main effect for a lot of people is anxiety about a number. If your ring is making you worry about your sleep, it has become part of the problem.
+
+**Blue light glasses** have a mixed evidence base. Reducing bright light in the evening clearly helps; whether tinted lenses specifically do the work is far less settled than the marketing implies. Dimming the room costs nothing and is better supported.
+
+**Supplements** are outside the scope of a gear article, and worth a conversation with a doctor rather than a comment section - particularly if you take anything else regularly.
+
+## The alcohol conversation
+
+A drink makes you fall asleep faster and sleep considerably worse. It suppresses REM sleep and fragments the second half of the night, which is why you can be unconscious for eight hours after a few pints and wake up feeling like you were awake for most of them.
+
+Nobody needs to be told never to drink again. But if you are trying to work out why your sleep is poor and you are drinking most evenings, that is the first variable to test - a fortnight without it tells you more than any amount of gear.
+
+## The wind-down that does not require a routine
+
+Elaborate evening rituals fail for the same reason elaborate anything fails: they are the first thing dropped on a bad week.
+
+The minimum viable version is one hour with lower light and no work. Not no screens, necessarily - that battle is usually lost - but no email, no spreadsheets, nothing that starts your brain solving something. The category matters more than the device.
+
+If you cannot switch off because you keep remembering things, keep a pad by the bed and write them down. Getting a thought out of your head and onto paper genuinely stops it circling.
+
+## When it is not a hygiene problem
+
+Some sleep problems do not respond to any of this, and it is worth knowing where the line is.
+
+Loud snoring with pauses in breathing, waking unrefreshed after a full night, falling asleep during the day when you did not intend to - these can indicate sleep apnoea, which is common, frequently undiagnosed in men, and very treatable once identified. It is not something to fix with curtains.
+
+Persistent difficulty falling or staying asleep for more than a few weeks is also worth raising with a doctor. Cognitive behavioural therapy for insomnia is the recommended first-line treatment and works better than most people expect.
+
+## The realistic version
+
+You are not going to become a person with a perfect sleep schedule. Nobody is.
+
+What is achievable is a steady wake time, ten minutes of morning light, a room that is dark and cool and boringly consistent, and not treating the last hour of the day as extra working time. That is four things, three of them free, and together they outperform every product on this page.
+
+Get those right and the gear becomes what it should have been all along - a small improvement on something already working, rather than a substitute for it.
+`
+  }
 ];
