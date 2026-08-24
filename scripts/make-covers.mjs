@@ -62,8 +62,12 @@ function pill(text) {
     .replace(/\s*\(PDF \+ EPUB\)/, " · PDF + EPUB")
     .replace(/\s*\(MP3\)/, "")
     .replace(/\s*\(M4A\)[^,]*/, "")
+    .replace(/\s*\(MP4\)[^,]*/, "")
     .replace(/\s*\(PDF\)/, "")
-    .replace(/\s*·\s*~?[\d.]+\s*(hours?|minutes?)/i, "")
+    // Runtimes are spelled several ways in the catalog ("~2 hours", "~21 min",
+    // "~1 hr 18 min"). Strip them all so every pill reads the same way.
+    .replace(/\s*·\s*~?\d+\s*hr\s*\d+\s*min\b/i, "")
+    .replace(/\s*·\s*~?[\d.]+\s*(hours?|hrs?|minutes?|mins?)\b/i, "")
     .trim();
 }
 
@@ -73,7 +77,13 @@ function parseProducts() {
   for (const block of src.split(/\n {2}\{\n/).slice(1)) {
     const slug = block.match(/slug: "([^"]+)"/);
     if (!slug) continue;
-    if (/\n {4}image: "/.test(block)) continue; // already has artwork
+    // Skip products that already have artwork, unless this slug was named on
+    // the command line. Formats appear on the cover as pills, so a product
+    // that gains audio or video needs its cover rebuilt:
+    //   node scripts/make-covers.mjs the-overwhelm-detox
+    const named = process.argv.slice(2).filter((a) => !a.startsWith("-"));
+    const slugName = slug[1];
+    if (/\n {4}image: "/.test(block) && !named.includes(slugName)) continue;
     const fmts = block.match(/formats: \[(.*?)\]/s);
     out.push({
       slug: slug.group ? slug.group(1) : slug[1],
@@ -86,6 +96,20 @@ function parseProducts() {
     });
   }
   return out;
+}
+
+/**
+ * The kicker starts from the category ("EBOOK") but grows as a product gains
+ * media, so a book with an hour of audio and twenty minutes of video doesn't
+ * still announce itself as an ebook and nothing else.
+ */
+function kicker(p) {
+  const base = (ACCENT[p.category] ?? ACCENT.mindset).label;
+  const has = (re) => p.formats.some((f) => re.test(f));
+  const extra = [];
+  if (has(/audio|m4a|mp3/i)) extra.push("AUDIO");
+  if (has(/video|mp4/i)) extra.push("VIDEO");
+  return [base, ...extra].join(" · ");
 }
 
 function html(p) {
@@ -121,7 +145,7 @@ function html(p) {
   <div class="glow"></div><div class="bar"></div>
   <div class="motif"><svg viewBox="0 0 236 236" fill="currentColor">${GLYPH[p.category] ?? GLYPH.mindset}</svg></div>
   <div class="wrap">
-    <div class="eyebrow"><div class="chip"></div><span>WICKED STACKS &nbsp;·&nbsp; ${acc.label}</span></div>
+    <div class="eyebrow"><div class="chip"></div><span>WICKED STACKS &nbsp;·&nbsp; ${kicker(p)}</span></div>
     <div>
       <h1>${esc(lines[0])}${lines[1] ? `<span class="accent">${esc(lines[1])}</span>` : ""}</h1>
       ${p.subtitle ? `<div class="sub">${esc(p.subtitle)}</div>` : ""}
