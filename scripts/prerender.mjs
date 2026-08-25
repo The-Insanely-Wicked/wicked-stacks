@@ -45,7 +45,7 @@ await build({
   stdin: {
     contents: `
       const { renderToStaticMarkup } = require("react-dom/server");
-      const { StaticRouter } = require("react-router-dom/server");
+      const { StaticRouter } = require("react-router");
       const App = require("./src/App").default;
       const { PRODUCTS, CATEGORY_LABELS } = require("./src/products");
       const { POSTS } = require("./src/posts");
