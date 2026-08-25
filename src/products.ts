@@ -144,7 +144,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "the-overwhelm-detox",
-    buyUrl: "https://buy.stripe.com/cNi3cv1q588PajL39rcQU0q",
+    buyUrl: "https://buy.stripe.com/3cI3cvfgVagX8bD11jcQU0r",
     title: "The Overwhelm Detox",
     subtitle: "Reclaim Your Time, Attention, and Peace from Digital Burnout",
     category: "mindset",
