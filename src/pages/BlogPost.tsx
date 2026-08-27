@@ -38,7 +38,7 @@ export default function BlogPost() {
         {post.videoUrl && (
           <p>
             <a href={post.videoUrl} target="_blank" rel="noopener noreferrer" className="blog-video-link">
-              ▶ Watch the free episode on YouTube
+              ▶ {post.videoLabel ?? "Watch the free episode on YouTube"}
             </a>
           </p>
         )}

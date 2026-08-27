@@ -14,6 +14,7 @@ export interface Post {
   body: string[];
   productSlug: string; // CTA at the end of the post
   videoUrl?: string; // optional YouTube link featured in the post
+  videoLabel?: string; // link text for that video; defaults to the free-episode wording
 }
 
 export const POSTS: Post[] = [
@@ -55,10 +56,12 @@ export const POSTS: Post[] = [
       "Do not change anything yet. Just write the bill.",
       "One week, one note on paper. Every time you notice you have surfaced from your phone without deciding to go in, write down what you were supposed to be doing instead. Do not judge it, do not fix it, just record it.",
       "At the end of the week you will have something better than a resolution. You will have evidence \u2014 and, most usefully, a pattern showing you the specific times of day it happens, which is where any change is actually going to have to go.",
+      "If you would rather hear the argument than read it, there is a ten-minute conversation version of it just below.",
       "The Overwhelm Detox is eleven chapters on all of this \u2014 the accounting, the notifications, the boundaries, rebuilding focus, designing your environment, and the inner critic that gets loud the second things go quiet. Nobody is asked to delete their accounts, move to a cabin, or feel guilty about liking the internet. It comes with three audio deep-dives and four short videos built from the same material.",
     ],
     productSlug: "the-overwhelm-detox",
     videoUrl: "https://youtu.be/MIBZRMtKWWM",
+    videoLabel: "Watch the 10-minute conversation on YouTube",
   },
   {
     slug: "digital-doppelgangers",
