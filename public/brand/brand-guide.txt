@@ -60,28 +60,32 @@ instant delivery. Browse the shelf at wickedstacks.com.
 
 THE SHELF (current catalog)
 ---------------------------
-Complete Business Mastery        $47   flagship + resource pack · cbmbook.com
+Complete Business Mastery        $47   flagship + resource pack + audio & video · cbmbook.com
 From Zero to Online Income       $17   beginner path + workbook
 Stuck No More                    $27   book + audiobook + The Restart Kit
 The Digital Tapestry             $19   social media survival + audiobook
-Your Shit Stinks Too             $12   audio collection, price locked
-The Tapestry Debates              $7   two audio debates
+The Overwhelm Detox              $29   book + 3 audio deep-dives + 4 videos
+Your Shit Stinks Too             $19   audio collection, price climbs as it grows
+The Tapestry Debates             $7    two audio debates
 Penny's Piggy Bank               $12   illustrated + full audiobook
-Princess Penny's Party           $12   illustrated problem-solving story
-Business Starter Stack           $54   From Zero + CBM, everything included
-Clear Head Stack                 $39   Stuck No More + Digital Tapestry
+Princess Penny's Problem-Solving Party $12   illustrated problem-solving story
+The Business Starter Stack       $54   From Zero + CBM, everything included
+The Clear Head Stack             $39   Stuck No More + Digital Tapestry
 Penny's Story Stack              $19   both Penny adventures + audio
-The Everything Stack             $89   the whole library + free upgrades
+The Everything Stack             $144  every book and both audio collections
 
 VIDEO COURSES
-Project Management Stack         $49   5 courses · 26 lessons · 3 PDF guides
-Communication Stack              $39   4 courses · 19 lessons · 2 PDF guides
-Focus & Resilience Stack         $39   5 courses · 16 lessons · 2 PDF guides
-Career Growth Stack              $39   3 courses · 22 lessons · 3 PDF guides
-Complete Course Library          $99   all 17 courses · 83 lessons
+The Project Management Stack     $49   5 courses · 26 lessons · 3 PDF guides
+The Communication Stack          $39   4 courses · 19 lessons · 2 PDF guides
+The Focus & Resilience Stack     $39   5 courses · 16 lessons · 2 PDF guides
+The Career Growth Stack          $39   3 courses · 22 lessons · 3 PDF guides
+The Complete Course Library      $99   all 17 courses · 83 lessons
 
 SOFTWARE
 DoodleAI                         $97   doodle video software · doodleai.app
+
+Prices here are generated from src/products.ts. If they disagree with
+the store, the store is right and this file is stale.
 
 BRAND COLORS
 ------------

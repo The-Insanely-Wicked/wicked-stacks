@@ -1,0 +1,126 @@
+COMPLETE BUSINESS MASTERY — BRAND GUIDE
+=======================================
+The single source of truth for cbmbook.com. If it's in here, it's approved.
+Live version with images: cbmbook.com/brand-kit.html
+Store guide: wickedstacks.com/brand-kit.html
+Parent company guide: theinsanelywicked.com/media-kit.html
+
+WHAT THIS SITE IS
+-----------------
+cbmbook.com is the standalone home of one book: Complete Business
+Mastery. The same book is also sold on wickedstacks.com, through the
+same checkout link, at the same price. This site exists to rank and
+convert for people searching for a business book, not to be a second
+store.
+
+Because it is one product on one page, the site has one job: explain
+what is in the book honestly enough that the right person buys it and
+the wrong person doesn't.
+
+VISUAL RELATIONSHIP TO THE STORE
+--------------------------------
+CBM Book is a child of Wicked Stacks and looks like it. Same palette,
+same fonts, same gradient. Someone landing here from the store should
+feel they never left the family.
+
+What is different: this site is quieter. No category nav, no shelf, no
+cross-sell. One book, one price, one button.
+
+BRAND VOICE
+-----------
+Shares The Insanely Wicked's DNA (plain beats fancy, funny never mean,
+no guru talk ever), plus the book's own register:
+
+1. Slightly sarcastic, never cynical. The book calls out nonsense; it
+   does not sneer at the reader for having believed it.
+2. Numbers over adjectives. "17 chapters, roughly 130 pages" beats
+   "comprehensive". Every claim on this page is checkable.
+3. Anti-guru by construction. No secrets, no hacks, no "what nobody
+   tells you". The book's whole argument is that the boring math is
+   the thing nobody does.
+4. Honest about who it is not for. A page that repels the wrong buyer
+   earns more than one that converts everyone and refunds half.
+
+TAGLINES
+--------
+Primary:   The ultimate (and slightly sarcastic) guide to building,
+           running, and growing any business.
+Secondary: Real frameworks. Real numbers. Zero guru fluff.
+Format:    Every format included. Future upgrades free.
+
+BIOS — COPY/PASTE READY
+-----------------------
+SHORT (~40 words):
+Complete Business Mastery is a 17-chapter guide to building, running,
+and growing a business — unit economics, market sizing, sales systems,
+hiring, and automation, with the math shown. Includes a full Resource
+Pack of templates, plus hours of audio and video.
+
+FULL (~95 words):
+Complete Business Mastery is the flagship title from Wicked Stacks: 17
+chapters covering the whole life of a business, from mindset and unit
+economics through market research, branding, sales systems,
+operations, hiring, automation, and scaling. It took a year and a half
+to write because it does not skip the hard parts — how to size a market
+three ways, when automation actually pays for itself, and why the
+butcher always gets paid. Every copy includes the Resource Pack of
+fill-in-the-blank templates and scripts, seven audio deep-dives, and
+three videos.
+
+BOILERPLATE
+-----------
+Complete Business Mastery is a business guide by Michael Gardner,
+published by Wicked Stacks™, a brand of The Insanely Wicked℠.
+Available at cbmbook.com and wickedstacks.com.
+
+WHAT'S IN THE PACKAGE
+---------------------
+Ebook              PDF + EPUB, 17 chapters
+Resource Pack      PDF — templates, scripts, scorecards, cross-
+                   referenced to the chapter that explains each one
+Audio deep-dives   7 files, over 3 hours
+Videos             3 files
+
+Price: $49. Identical on both sites, through the same Stripe link.
+If one site's price changes, the other must change in the same commit.
+
+BRAND COLORS
+------------
+Wicked Dark   #0D0B14   background
+Panel         #1A1526   raised surfaces
+Edge          #2B2440   borders
+Cyan          #35C7EE   }
+Purple        #8B5CF6   } the signature gradient, always in
+Coral         #F2545B   } this order: cyan-purple-coral-amber
+Amber         #F5A623   }
+Amber Deep    #241800   amber-tinted panel backgrounds
+Text          #ECE9F4   body text on dark
+Text Dim      #A49DBD   secondary text
+
+Same palette as Wicked Stacks, deliberately. The gradient runs
+left-to-right and is never reordered.
+
+TYPOGRAPHY
+----------
+Headlines: Sora (600-800)
+Body:      Inter (400-700)
+Both free on Google Fonts. Same as the store and the parent brand.
+
+CONTENT RULES — NOT NEGOTIABLE
+------------------------------
+- Never invent statistics, studies, expert names, or testimonials.
+  There are no reviews on this page because there are no real reviews
+  to quote yet.
+- Never invent author credentials. The author is a founder who wrote
+  what he learned. That is the claim, and it is the whole claim.
+- Case studies in the book use anonymised real people. Keep the
+  anonymisation in marketing too — never swap in a real name.
+- Page counts, chapter counts, runtimes and formats must match what
+  the buyer actually receives. Check src/products.ts before changing
+  any of them here.
+
+CONTACT
+-------
+sales@theinsanelywicked.com · cbmbook.com
+A Wicked Stacks™ title · wickedstacks.com
+A brand of The Insanely Wicked℠ · theinsanelywicked.com
