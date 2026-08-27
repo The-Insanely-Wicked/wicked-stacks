@@ -63,7 +63,7 @@ export const PRODUCTS: Product[] = [
       "It took a year and a half to write because it doesn't skip the hard parts: how to size a market three different ways, when automation actually pays for itself (with the math), and why the butcher always gets paid.",
       "The included Resource Pack turns the book into action: fill-in-the-blank financial templates, cold email and call scripts, objection-handling lines, hiring scorecards, 30-60-90 plans, SOP templates, and go-to-market checklists — each cross-referenced to the chapter that explains it.",
       "Seven bonus audio deep-dives are included free — Why Rational Leaders Make Destructive Decisions, The Brutal Math of Strategic Sacrifice, Why Profitable Companies Go Bankrupt, Four Funding Paths and Founder Psychology, Bootstrapping versus Venture Capital, Turn Sales Rejections into Product Moats, and Bulletproofing Your Business Against Legal Disasters. Over three hours of the book's hardest ideas, argued out loud for your commute.",
-      "Three short videos come with it too: The Physics of Profit, Strategy is Sacrifice, and The Physics of Business Survival — the arguments that are easier to watch than to read.",
+      "Three short videos come with it too: The Physics of Profit, Strategy is Sacrifice, and The 13-Week Cash Flow Rule — the arguments that are easier to watch than to read.",
     ],
     bullets: [
       "17 chapters, ~130 pages, written by a founder — not a content farm",
@@ -72,7 +72,7 @@ export const PRODUCTS: Product[] = [
       "Hiring scorecards, 30-60-90 plans, and SOP templates in the Resource Pack",
       "Automation ROI math you can actually run on your own business",
       "7 bonus audio deep-dives (over 3 hours) — the big ideas argued out",
-      "3 videos on profit, sacrifice, and why businesses actually survive",
+      "3 videos on profit, strategic sacrifice, and the 13-week cash flow rule",
     ],
   },
   {
