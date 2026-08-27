@@ -43,13 +43,18 @@ export const SITE = {
 export const PRODUCTS: Product[] = [
   {
     slug: "complete-business-mastery",
-    buyUrl: "https://buy.stripe.com/00w9AT4Ch0Gn77z25ncQU00",
+    buyUrl: "https://buy.stripe.com/28E7sL2u960HcrTbFXcQU0u",
     title: "Complete Business Mastery",
     subtitle: "The Ultimate (and Slightly Sarcastic) Guide to Building, Running, and Growing Any Business",
     category: "business",
     image: "/covers/complete-business-mastery.png",
-    price: 47,
-    formats: ["Ebook (PDF + EPUB)", "Resource Pack (PDF)", "4 audio deep-dives (M4A) · ~2 hours"],
+    price: 49,
+    formats: [
+      "Ebook (PDF + EPUB)",
+      "Resource Pack (PDF)",
+      "7 audio deep-dives (M4A) · over 3 hours",
+      "3 videos (MP4)",
+    ],
     badge: "Flagship",
     blurb:
       "17 chapters of real frameworks, real numbers, and zero guru fluff — plus a full toolkit of templates, scripts, and scorecards.",
@@ -57,7 +62,8 @@ export const PRODUCTS: Product[] = [
       "This is not a motivational poster stretched into a book. Complete Business Mastery walks through the entire life of a business — mindset, unit economics, market research, branding, sales systems, operations, hiring, automation, and scaling — with the numbers shown and the nonsense called out.",
       "It took a year and a half to write because it doesn't skip the hard parts: how to size a market three different ways, when automation actually pays for itself (with the math), and why the butcher always gets paid.",
       "The included Resource Pack turns the book into action: fill-in-the-blank financial templates, cold email and call scripts, objection-handling lines, hiring scorecards, 30-60-90 plans, SOP templates, and go-to-market checklists — each cross-referenced to the chapter that explains it.",
-      "New: four bonus audio deep-dives (~2 hours) now included free — Why Rational Leaders Make Destructive Decisions, The Brutal Math of Strategic Sacrifice, Why Profitable Companies Go Bankrupt, and Four Funding Paths and Founder Psychology. The book's hardest ideas, argued out loud for your commute.",
+      "Seven bonus audio deep-dives are included free — Why Rational Leaders Make Destructive Decisions, The Brutal Math of Strategic Sacrifice, Why Profitable Companies Go Bankrupt, Four Funding Paths and Founder Psychology, Bootstrapping versus Venture Capital, Turn Sales Rejections into Product Moats, and Bulletproofing Your Business Against Legal Disasters. Over three hours of the book's hardest ideas, argued out loud for your commute.",
+      "Three short videos come with it too: The Physics of Profit, Strategy is Sacrifice, and The Physics of Business Survival — the arguments that are easier to watch than to read.",
     ],
     bullets: [
       "17 chapters, ~130 pages, written by a founder — not a content farm",
@@ -65,7 +71,8 @@ export const PRODUCTS: Product[] = [
       "Sales scripts, objection handling, and closing systems",
       "Hiring scorecards, 30-60-90 plans, and SOP templates in the Resource Pack",
       "Automation ROI math you can actually run on your own business",
-      "4 bonus audio deep-dives included — listen to the big ideas argued out",
+      "7 bonus audio deep-dives (over 3 hours) — the big ideas argued out",
+      "3 videos on profit, sacrifice, and why businesses actually survive",
     ],
   },
   {
@@ -442,13 +449,13 @@ export const PRODUCTS: Product[] = [
   // ------------------------------- STACKS -------------------------------
   {
     slug: "business-starter-stack",
-    buyUrl: "https://buy.stripe.com/8x2eVd6Kp4WDbnPeS9cQU05",
+    buyUrl: "https://buy.stripe.com/bJecN55GlfBh63v25ncQU0v",
     title: "The Business Starter Stack",
     subtitle: "From your first idea to a business that runs",
     category: "stack",
     image: "/covers/business-starter-stack.png",
-    price: 54,
-    compareAt: 64,
+    price: 56,
+    compareAt: 66,
     formats: ["2 ebooks + 2 workbooks"],
     badge: "Best value",
     includes: ["from-zero-to-online-income", "complete-business-mastery"],
@@ -512,13 +519,13 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "everything-stack",
-    buyUrl: "https://buy.stripe.com/9B6fZh4ChagXajL6lDcQU0t",
+    buyUrl: "https://buy.stripe.com/dRmaEXfgV9cTdvXaBTcQU0w",
     title: "The Everything Stack",
     subtitle: "Every book and every audio collection",
     category: "stack",
     image: "/covers/everything-stack.png",
-    price: 144,
-    compareAt: 189,
+    price: 146,
+    compareAt: 191,
     formats: ["7 books + 3 workbooks + 3 audiobooks", "Both audio collections", "Audio and video deep-dives"],
     badge: "The whole stack",
     includes: [
