@@ -487,7 +487,7 @@ export const PRODUCTS: Product[] = [
     image: "/covers/clear-head-stack.png",
     price: 49,
     compareAt: 56,
-    formats: ["2 ebooks + 2 audiobooks + The Restart Kit"],
+    formats: ["2 ebooks + 2 audiobooks + The Restart Kit + 3 videos"],
     includes: ["stuck-no-more", "the-digital-tapestry"],
     blurb:
       "Stuck No More to get you moving, The Digital Tapestry to take your brain back from the feed.",
