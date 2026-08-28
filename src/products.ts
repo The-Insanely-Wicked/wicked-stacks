@@ -89,14 +89,21 @@ export const PRODUCTS: Product[] = [
     subtitle: "A Beginner's Guide to Building a One-Person Business",
     category: "business",
     image: "/covers/from-zero-to-online-income.png",
-    price: 17,
-    formats: ["Ebook (PDF + EPUB)", "Workbook (PDF)"],
+    price: 32,
+    formats: [
+      "Ebook (PDF + EPUB)",
+      "Workbook (PDF)",
+      "3 audio deep-dives (M4A) · ~1 hr 54 min",
+      "3 videos (MP4) · 21 min",
+    ],
     badge: "Start here",
     blurb:
       "The realistic, no-hype path from nothing to your first online income — with a chapter-matched workbook.",
     description: [
       "No screenshots of rented Lamborghinis. From Zero to Online Income is the honest version of starting a one-person business: picking an idea you can actually execute, finding the people it serves, making a simple offer, and getting your first sales without an audience.",
       "Thirteen chapters across three parts — Foundation, Traction, and Growth — each paired with worksheets in the companion workbook: niche selection, offer design, sales conversation scripts, and a scaling decision guide.",
+      "Three audio deep-dives come with it now, running close to two hours between them: Should You Scale or Stay Small, Ditch Research Mode for Online Income, and Stop Hiding Behind Online Business Research. Built for the commute, the washing up, or the walk you take instead of opening another tab.",
+      "Three short videos as well — The Physics of Trust, The Niche Differentiator, and The Minimum Viable Blueprint — twenty-one minutes on the parts people get stuck on first.",
       "Written for the person starting from zero. You're not behind — you're just getting started.",
     ],
     bullets: [
@@ -104,6 +111,8 @@ export const PRODUCTS: Product[] = [
       "Chapter-matched workbook with fill-in worksheets",
       "Sales conversation scripts with real objection responses",
       "Anti-hype: built around 50 true fans, not viral fantasies",
+      "3 audio deep-dives (~1 hr 54 min) on scaling, research paralysis, and hiding",
+      "3 videos (21 min) on trust, niche, and the smallest thing you can launch",
     ],
   },
   {
@@ -483,9 +492,9 @@ export const PRODUCTS: Product[] = [
     subtitle: "From your first idea to a business that runs",
     category: "stack",
     image: "/covers/business-starter-stack.png",
-    price: 56,
-    compareAt: 66,
-    formats: ["2 ebooks + 2 workbooks"],
+    price: 61,
+    compareAt: 81,
+    formats: ["2 ebooks + 2 workbooks + 3 audio deep-dives + 3 videos"],
     badge: "Best value",
     includes: ["from-zero-to-online-income", "complete-business-mastery"],
     blurb:
@@ -508,8 +517,8 @@ export const PRODUCTS: Product[] = [
     category: "stack",
     image: "/covers/clear-head-stack.png",
     price: 49,
-    compareAt: 56,
-    formats: ["2 ebooks + 2 audiobooks + The Restart Kit + 3 videos"],
+    compareAt: 66,
+    formats: ["2 ebooks + 2 audiobooks + The Restart Kit + 6 videos"],
     includes: ["stuck-no-more", "the-digital-tapestry"],
     blurb:
       "Stuck No More to get you moving, The Digital Tapestry to take your brain back from the feed.",
@@ -553,8 +562,8 @@ export const PRODUCTS: Product[] = [
     subtitle: "Every book and every audio collection",
     category: "stack",
     image: "/covers/everything-stack.png",
-    price: 156,
-    compareAt: 201,
+    price: 177,
+    compareAt: 236,
     formats: ["7 books + 3 workbooks + 3 audiobooks", "Both audio collections", "Audio and video deep-dives"],
     badge: "The whole stack",
     includes: [
