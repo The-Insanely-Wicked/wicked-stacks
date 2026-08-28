@@ -234,7 +234,7 @@ export const PRODUCTS: Product[] = [
       "Everything added for 12 months, free",
     ],
     blurb:
-      "Nobody gets to ride the high horse — a growing collection of audio deep-dives on hypocrisy, bias, and the mess we're all standing in. Born as a podcast, starring Michael and his dog Frankie.",
+      "Nobody gets to ride the high horse. The book, two hours of audio deep-dives, and three short videos on hypocrisy, bias, and the mess we're all standing in. Born as a podcast, starring Michael and his dog Frankie.",
     description: [
       "Your Shit Stinks Too started as a podcast with an unlikely duo: Michael and his dog Frankie, calling out the one thing humans hate admitting — everybody's shit stinks, including yours, including his.",
       "This collection turns that story into deep-dive conversations that dig into the big uncomfortable stuff: The High Horse of Human Hypocrisy (~40 min), Why Our Brains Defend Systemic Inequality (~43 min), and Shared Fallibility and Systemic Racism (~38 min).",
