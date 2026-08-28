@@ -38,6 +38,13 @@ export const SITE = {
   emailFormAction:
     "https://assets.mailerlite.com/jsonp/2587075/forms/196335778720121922/subscribe",
   contactEmail: "sales@theinsanelywicked.com",
+  // The free-updates promise. Shown on every book page (not the licensed
+  // video courses, which aren't ours to add to). Worded carefully — this is
+  // a commitment to buyers, so don't loosen it without meaning to.
+  updatesPromise:
+    "Buy it once and you keep getting more. Everything added to this book in the twelve months after you buy — new audio, new videos, workbooks, updated editions — is emailed to you free. No upgrade fee, no buying it again.",
+  updatesFootnote:
+    "Anything released free on YouTube or social media isn't part of this — that's already free for everybody.",
 };
 
 export const PRODUCTS: Product[] = [
@@ -133,20 +140,27 @@ export const PRODUCTS: Product[] = [
     subtitle: "Navigating Social Media, Influence, and the Future of Connection",
     category: "mindset",
     image: "/covers/the-digital-tapestry.png",
-    price: 19,
-    formats: ["Ebook (PDF)", "Audiobook (MP3)"],
+    price: 29,
+    formats: [
+      "Ebook (PDF)",
+      "Audiobook (MP3)",
+      "3 videos (MP4) · 23 min",
+    ],
     blurb:
       "A sharp, funny deep-dive into what social media is actually doing to our brains, identities, and culture — and how to use it without being used.",
     description: [
       "From BBS boards to algorithmic feeds, The Digital Tapestry traces how we got here and what it's costing us: identity performance, influencer culture, the attention economy, misinformation, and the quiet rewiring of how we connect.",
       "Nine chapters plus case studies and reflection exercises, written by a slightly sarcastic, overly caffeinated guide who has read the research and refuses to be boring about it.",
       "The full audiobook edition is included with every copy — read it, listen to it, or both.",
+      "Three short videos come with it now as well: The Digital Tapestry, Digital Funhouse Mirror, and The Hijacking of the Public Sphere — twenty-three minutes on the book's sharpest arguments, for when watching beats reading.",
     ],
     bullets: [
       "9 chapters + case studies + reflection prompts",
       "The real history of social media, minus the nostalgia filter",
       "How algorithms shape identity, culture, and what you buy",
       "Practical strategies for authentic engagement — or graceful exit",
+      "Full audiobook included — the whole book, read aloud",
+      "3 videos (23 min) on identity, the funhouse mirror, and the public sphere",
     ],
   },
   {
@@ -213,18 +227,18 @@ export const PRODUCTS: Product[] = [
     image: "/covers/your-shit-stinks-too.png",
     price: 19,
     badge: "Audio · growing",
-    formats: ["3 audio deep-dives (M4A) · ~2 hours", "New episodes free for 12 months"],
+    formats: ["3 audio deep-dives (M4A) · ~2 hours", "Everything added for 12 months, free"],
     blurb:
       "Nobody gets to ride the high horse — a growing collection of audio deep-dives on hypocrisy, bias, and the mess we're all standing in. Born as a podcast, starring Michael and his dog Frankie.",
     description: [
       "Your Shit Stinks Too started as a podcast with an unlikely duo: Michael and his dog Frankie, calling out the one thing humans hate admitting — everybody's shit stinks, including yours, including his.",
       "This collection turns that story into deep-dive conversations that dig into the big uncomfortable stuff: The High Horse of Human Hypocrisy (~40 min), Why Our Brains Defend Systemic Inequality (~43 min), and Shared Fallibility and Systemic Racism (~38 min).",
-      "It's a living collection. Every episode released in the twelve months after you buy is emailed to you free, and the price climbs as the collection grows — so the earlier you buy, the more you get and the less you pay for it.",
+      "It's a living collection. Everything released in the twelve months after you buy is emailed to you free — episodes, videos, workbooks, whatever gets added — and the price climbs as the collection grows. The earlier you buy, the more you get and the less you pay for it.",
     ],
     bullets: [
       "3 deep-dive episodes, ~2 hours of audio",
       "Honest, funny, and uncomfortable in the good way",
-      "Every new episode for the next 12 months, emailed free",
+      "Everything added for the next 12 months — audio, video, workbooks — emailed free",
       "Price goes up as the collection grows — lock in today's",
       "Listen anywhere — it's yours, no app required",
     ],
@@ -478,9 +492,9 @@ export const PRODUCTS: Product[] = [
     subtitle: "Get unstuck. Get your attention back.",
     category: "stack",
     image: "/covers/clear-head-stack.png",
-    price: 39,
-    compareAt: 46,
-    formats: ["2 ebooks + 2 audiobooks + The Restart Kit"],
+    price: 49,
+    compareAt: 56,
+    formats: ["2 ebooks + 2 audiobooks + The Restart Kit + 3 videos"],
     includes: ["stuck-no-more", "the-digital-tapestry"],
     blurb:
       "Stuck No More to get you moving, The Digital Tapestry to take your brain back from the feed.",
@@ -524,8 +538,8 @@ export const PRODUCTS: Product[] = [
     subtitle: "Every book and every audio collection",
     category: "stack",
     image: "/covers/everything-stack.png",
-    price: 146,
-    compareAt: 191,
+    price: 156,
+    compareAt: 201,
     formats: ["7 books + 3 workbooks + 3 audiobooks", "Both audio collections", "Audio and video deep-dives"],
     badge: "The whole stack",
     includes: [
