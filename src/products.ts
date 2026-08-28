@@ -84,7 +84,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "from-zero-to-online-income",
-    buyUrl: "https://buy.stripe.com/00w28rc4Jdt92Rj6lDcQU01",
+    buyUrl: "https://buy.stripe.com/5kQ28r9WB2OvdvX5hzcQU0A",
     title: "From Zero to Online Income",
     subtitle: "A Beginner's Guide to Building a One-Person Business",
     category: "business",
@@ -117,7 +117,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "stuck-no-more",
-    buyUrl: "https://buy.stripe.com/cNi9AT4Chcp5fE5h0hcQU0n",
+    buyUrl: "https://buy.stripe.com/14AbJ13yd1KrdvX9xPcQU0z",
     title: "Stuck No More",
     subtitle: "A Simple Guide to Rebuilding Motivation, Confidence, and Direction",
     category: "mindset",
@@ -151,7 +151,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "the-digital-tapestry",
-    buyUrl: "https://buy.stripe.com/cNi4gzgkZ60H77zh0hcQU03",
+    buyUrl: "https://buy.stripe.com/fZudR90m1bl1eA1bFXcQU0x",
     title: "The Digital Tapestry",
     subtitle: "Navigating Social Media, Influence, and the Future of Connection",
     category: "mindset",
@@ -236,7 +236,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "your-shit-stinks-too",
-    buyUrl: "https://buy.stripe.com/4gM3cv1q54WD77zaBTcQU0p",
+    buyUrl: "https://buy.stripe.com/6oU8wPc4JgFlcrT7pHcQU0y",
     title: "Your Shit Stinks Too",
     subtitle: "Nobody Gets the High Horse",
     category: "mindset",
@@ -487,7 +487,7 @@ export const PRODUCTS: Product[] = [
   // ------------------------------- STACKS -------------------------------
   {
     slug: "business-starter-stack",
-    buyUrl: "https://buy.stripe.com/bJecN55GlfBh63v25ncQU0v",
+    buyUrl: "https://buy.stripe.com/9B67sL6Kp9cTeA1eS9cQU0C",
     title: "The Business Starter Stack",
     subtitle: "From your first idea to a business that runs",
     category: "stack",
@@ -511,7 +511,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "clear-head-stack",
-    buyUrl: "https://buy.stripe.com/8x25kD2u92OvbnPeS9cQU0o",
+    buyUrl: "https://buy.stripe.com/14AeVdd8NgFl4ZrdO5cQU0B",
     title: "The Clear Head Stack",
     subtitle: "Get unstuck. Get your attention back.",
     category: "stack",
@@ -557,7 +557,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "everything-stack",
-    buyUrl: "https://buy.stripe.com/dRmaEXfgV9cTdvXaBTcQU0w",
+    buyUrl: "https://buy.stripe.com/4gM7sL0m1agXbnPaBTcQU0D",
     title: "The Everything Stack",
     subtitle: "Every book and every audio collection",
     category: "stack",
