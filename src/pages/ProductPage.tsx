@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { bySlug, CATEGORY_LABELS } from "../products";
+import { bySlug, CATEGORY_LABELS, SITE } from "../products";
 import BuyButton from "../components/BuyButton";
 import ProductCard from "../components/ProductCard";
 import NotFound from "./NotFound";
@@ -90,6 +90,14 @@ export default function ProductPage() {
               ))}
             </div>
           </>
+        )}
+
+        {product.category !== "courses" && (
+          <aside className="updates-promise">
+            <h3>Free updates for 12 months</h3>
+            <p>{SITE.updatesPromise}</p>
+            <p className="updates-note">* {SITE.updatesFootnote}</p>
+          </aside>
         )}
 
         <p className="guarantee">

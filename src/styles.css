@@ -401,6 +401,30 @@ a {
   color: var(--ink-soft);
 }
 
+.updates-promise {
+  margin-top: 32px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--amber);
+  border-radius: var(--radius);
+  background: var(--bg-raised);
+}
+.updates-promise h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: var(--amber);
+}
+.updates-promise p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.updates-promise .updates-note {
+  margin-top: 12px;
+  font-size: 0.86rem;
+  opacity: 0.8;
+}
+
 /* ---------- doodle promo ---------- */
 .doodle-promo .wrap {
   background:
@@ -664,4 +688,13 @@ button:focus-visible {
 }
 .preview-strip figcaption {
   color: var(--muted, #a49dbd); font-size: .85rem; margin-top: 8px; line-height: 1.35;
+}
+
+.footer-fineprint {
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  opacity: 0.75;
+  line-height: 1.55;
+  max-width: 70ch;
 }

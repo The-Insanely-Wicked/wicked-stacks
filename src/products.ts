@@ -38,6 +38,13 @@ export const SITE = {
   emailFormAction:
     "https://assets.mailerlite.com/jsonp/2587075/forms/196335778720121922/subscribe",
   contactEmail: "sales@theinsanelywicked.com",
+  // The free-updates promise. Shown on every book page (not the licensed
+  // video courses, which aren't ours to add to). Worded carefully — this is
+  // a commitment to buyers, so don't loosen it without meaning to.
+  updatesPromise:
+    "Buy it once and you keep getting more. Everything added to this book in the twelve months after you buy — new audio, new videos, workbooks, updated editions — is emailed to you free. No upgrade fee, no buying it again.",
+  updatesFootnote:
+    "Anything released free on YouTube or social media isn't part of this — that's already free for everybody.",
 };
 
 export const PRODUCTS: Product[] = [
@@ -220,18 +227,18 @@ export const PRODUCTS: Product[] = [
     image: "/covers/your-shit-stinks-too.png",
     price: 19,
     badge: "Audio · growing",
-    formats: ["3 audio deep-dives (M4A) · ~2 hours", "New episodes free for 12 months"],
+    formats: ["3 audio deep-dives (M4A) · ~2 hours", "Everything added for 12 months, free"],
     blurb:
       "Nobody gets to ride the high horse — a growing collection of audio deep-dives on hypocrisy, bias, and the mess we're all standing in. Born as a podcast, starring Michael and his dog Frankie.",
     description: [
       "Your Shit Stinks Too started as a podcast with an unlikely duo: Michael and his dog Frankie, calling out the one thing humans hate admitting — everybody's shit stinks, including yours, including his.",
       "This collection turns that story into deep-dive conversations that dig into the big uncomfortable stuff: The High Horse of Human Hypocrisy (~40 min), Why Our Brains Defend Systemic Inequality (~43 min), and Shared Fallibility and Systemic Racism (~38 min).",
-      "It's a living collection. Every episode released in the twelve months after you buy is emailed to you free, and the price climbs as the collection grows — so the earlier you buy, the more you get and the less you pay for it.",
+      "It's a living collection. Everything released in the twelve months after you buy is emailed to you free — episodes, videos, workbooks, whatever gets added — and the price climbs as the collection grows. The earlier you buy, the more you get and the less you pay for it.",
     ],
     bullets: [
       "3 deep-dive episodes, ~2 hours of audio",
       "Honest, funny, and uncomfortable in the good way",
-      "Every new episode for the next 12 months, emailed free",
+      "Everything added for the next 12 months — audio, video, workbooks — emailed free",
       "Price goes up as the collection grows — lock in today's",
       "Listen anywhere — it's yours, no app required",
     ],
