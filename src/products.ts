@@ -113,14 +113,20 @@ export const PRODUCTS: Product[] = [
     subtitle: "A Simple Guide to Rebuilding Motivation, Confidence, and Direction",
     category: "mindset",
     image: "/covers/stuck-no-more.png",
-    price: 27,
-    formats: ["Ebook (PDF + EPUB)", "Audiobook (MP3)", "The Restart Kit (PDF)"],
+    price: 37,
+    formats: [
+      "Ebook (PDF + EPUB)",
+      "Audiobook (MP3)",
+      "The Restart Kit (PDF)",
+      "3 videos (MP4) · 25 min",
+    ],
     blurb:
       "For anyone who feels stalled: how shame and paralysis actually work, and the small, doable steps that get you moving again.",
     description: [
       "Stuck No More is for the season where everything feels heavy and nothing feels possible. It takes the mechanics of feeling stuck — shame, paralysis, lost direction — and breaks them into pieces small enough to actually deal with.",
       "It covers rebuilding habits without self-punishment, finding purpose without a lightning-bolt moment, and treating yourself like someone worth helping. No toxic positivity, no 5 AM cold plunges required.",
       "The full audiobook edition is now included with every copy — read it, listen to it, or both.",
+      "Three short videos come with it now as well: Reclaiming the Mirror, The Autonomy of Avoidance and Overcoming, and The Architecture of Paralysis — twenty-five minutes on the hardest parts of getting moving again.",
       "And every copy now comes with The Restart Kit: a printable companion workbook with a tool for all fourteen chapters — the Stuck Inventory, the Roadblock Identifier, the Small Promise Tracker, the Restart Protocol — finishing with an Emergency Restart Card built for the day it all falls apart. Read the chapter, spend fifteen minutes with its worksheet, and the ideas turn into motion.",
     ],
     bullets: [
@@ -130,6 +136,7 @@ export const PRODUCTS: Product[] = [
       "Ends with a plan, not a pep talk",
       "Full audiobook edition included free",
       "The Restart Kit: 14 printable worksheets + the Emergency Restart Card",
+      "3 videos (25 min) on paralysis, avoidance, and facing yourself again",
       "Price locked at purchase — anything added later is yours free",
     ],
   },
