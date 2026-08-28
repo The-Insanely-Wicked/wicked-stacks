@@ -133,20 +133,27 @@ export const PRODUCTS: Product[] = [
     subtitle: "Navigating Social Media, Influence, and the Future of Connection",
     category: "mindset",
     image: "/covers/the-digital-tapestry.png",
-    price: 19,
-    formats: ["Ebook (PDF)", "Audiobook (MP3)"],
+    price: 29,
+    formats: [
+      "Ebook (PDF)",
+      "Audiobook (MP3)",
+      "3 videos (MP4) · 23 min",
+    ],
     blurb:
       "A sharp, funny deep-dive into what social media is actually doing to our brains, identities, and culture — and how to use it without being used.",
     description: [
       "From BBS boards to algorithmic feeds, The Digital Tapestry traces how we got here and what it's costing us: identity performance, influencer culture, the attention economy, misinformation, and the quiet rewiring of how we connect.",
       "Nine chapters plus case studies and reflection exercises, written by a slightly sarcastic, overly caffeinated guide who has read the research and refuses to be boring about it.",
       "The full audiobook edition is included with every copy — read it, listen to it, or both.",
+      "Three short videos come with it now as well: The Digital Tapestry, Digital Funhouse Mirror, and The Hijacking of the Public Sphere — twenty-three minutes on the book's sharpest arguments, for when watching beats reading.",
     ],
     bullets: [
       "9 chapters + case studies + reflection prompts",
       "The real history of social media, minus the nostalgia filter",
       "How algorithms shape identity, culture, and what you buy",
       "Practical strategies for authentic engagement — or graceful exit",
+      "Full audiobook included — the whole book, read aloud",
+      "3 videos (23 min) on identity, the funhouse mirror, and the public sphere",
     ],
   },
   {
@@ -478,8 +485,8 @@ export const PRODUCTS: Product[] = [
     subtitle: "Get unstuck. Get your attention back.",
     category: "stack",
     image: "/covers/clear-head-stack.png",
-    price: 39,
-    compareAt: 46,
+    price: 49,
+    compareAt: 56,
     formats: ["2 ebooks + 2 audiobooks + The Restart Kit"],
     includes: ["stuck-no-more", "the-digital-tapestry"],
     blurb:
@@ -524,8 +531,8 @@ export const PRODUCTS: Product[] = [
     subtitle: "Every book and every audio collection",
     category: "stack",
     image: "/covers/everything-stack.png",
-    price: 146,
-    compareAt: 191,
+    price: 156,
+    compareAt: 201,
     formats: ["7 books + 3 workbooks + 3 audiobooks", "Both audio collections", "Audio and video deep-dives"],
     badge: "The whole stack",
     includes: [
