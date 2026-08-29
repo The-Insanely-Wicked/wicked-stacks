@@ -7,3 +7,10 @@ dist
 # parallel branch conflict on rss.xml the moment another one merged.
 public/rss.xml
 public/sitemap.xml
+
+# Never commit environment files. This repo is PUBLIC — anything landing here
+# is world-readable the moment it is pushed, and git history keeps it even
+# after a delete. Real secrets belong in Vercel's environment variables.
+.env
+.env.*
+!.env.example
